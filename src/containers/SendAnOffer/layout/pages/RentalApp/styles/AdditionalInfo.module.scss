@@ -1,0 +1,51 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.NewOffer {
+    .title {
+        font-family: Regular;
+        font-size: rem(17);
+        color: $turquoise-blue;
+        padding-top: rem($spacing-xxs);
+        margin-left: rem($spacing-xxs-1);
+    }
+    .employment {
+        color: $greyish-brown;
+        font-size: rem(17);
+        font-family: SemiBoldFont;
+    }
+    .select-wrapper {
+        width: 100%;
+        max-width: 596px;
+        margin-top: 2rem;
+    }
+}
+
+.document {
+    position: relative;
+    width: 144px;
+    height: 48px;
+    border-radius: 5px;
+    border: solid 1px #e5e5e5;
+    overflow: hidden;
+    @media (max-width: 1200px) {
+        margin-top: 1rem;
+    }
+    .cancel {
+        position: absolute;
+        top: 0.3rem;
+        right: 0.3rem;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+    }
+    .doc {
+        width: 21px;
+        height: 30px;
+    }
+    p {
+        color: greyish-brown;
+        font-size: rem(10);
+        font-family: Regular;
+        margin: 0;
+    }
+}

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.rental-listing .title span {
+  font-family: Regular;
+  font-size: 1.0625rem;
+  color: #a7a7a7;
+}
+
+.rental-listing .grafTitle {
+  margin-top: 4rem;
+  color: #7b7b7b;
+  font-size: 0.9375rem;
+  font-family: Regular;
+}
+
+.rental-listing .graf {
+  width: 100%;
+  height: 280px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 2.5rem;
+}
+
+.rental-listing .content {
+  font-family: Regular;
+  font-size: 1rem;
+  color: #7b7b7b;
+}
+
+.rental-listing .question {
+  width: 55%;
+}
+
+@media (max-width: 991px) {
+  .rental-listing .question {
+    width: 100%;
+  }
+}
+
+.rental-listing .question p {
+  margin: 0;
+  color: #7b7b7b;
+  font-family: Regular;
+  font-size: 0.9375rem;
+}
+
+.rental-listing .nextbtn {
+  float: right;
+  width: 55%;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .rental-listing .nextbtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .rental-listing .nextbtn {
+    margin: 2.5rem 0;
+  }
+}
+
+.rental-listing .nextbtn .cancel svg {
+  width: 22px;
+  height: 22px;
+}
+
+.rental-listing .nextbtn .cancel span {
+  cursor: pointer;
+  font-size: 0.9375rem;
+  color: #00bbd8;
+  font-family: Regular;
+}
+/*# sourceMappingURL=SellPrice.module.css.map */

@@ -1,0 +1,67 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.verification{
+    margin-top:rem($spacing-xl);
+    .hero{
+        margin-top:78px;
+    }
+    .title{
+        font-size: rem(17);
+        font-family: Regular;
+        color:$turquoise-blue;
+        margin-left: rem($spacing-xxs);
+        margin-top: rem($spacing-xxs-1);
+    }
+    .wrapper{
+        width: 40%;
+        margin: auto;
+        @media(max-width:991px){
+            width: 60%;
+            margin-top: rem($spacing-m);
+        }
+        @media(max-width:768px){
+            width: 80%;
+            margin-top: rem($spacing-m);
+        }
+        @media(max-width:538px){
+            width: 100%;
+            margin-top: rem($spacing-m);
+        }
+        .titlee{
+            color:$greyish-brown;
+            font-family: SemiBoldFont;
+            font-size: rem(18);
+            position: relative;
+            &:after{
+                position: absolute;
+                content:'';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #9feefa;
+                z-index: -1;
+                left: -3px;                ;
+            }
+        }
+        .desc{
+            color:$greyish-brown;
+            font-family: Regular;
+            font-size: rem(17);
+        }
+        .paragraph{
+            margin-top:rem($spacing-xs);
+            margin-bottom:rem($spacing-s);
+            p{
+                color:$turquoise-blue;
+                font-family: Regular;
+                font-size: rem(15);
+                margin:0;
+               cursor: pointer;
+               &:hover{
+                   opacity: 0.7;
+               }
+            }
+        
+        }
+    }
+}

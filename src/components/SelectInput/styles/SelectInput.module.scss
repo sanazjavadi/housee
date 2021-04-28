@@ -1,0 +1,77 @@
+@import '../../../globalStyles/index.scss';
+
+
+.SelectInput{
+    display: flex;
+    align-items: center;
+  
+    width: 100%;
+    .offerItem{
+      width:100%;
+
+        max-width: 104.4px;
+        height: 92px;
+        border-radius: 5px;
+        border: solid 1px #e5e5e5;
+        background-color: #ffffff;
+        border:1px solid #e5e5e5;
+       
+        color:$warm-grey;
+        font-family: Regular;
+        font-size:rem(15);
+        text-align:center;
+        margin:0 0.5rem;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        @media(max-width:600px){
+            font-size:rem(13);
+        height:70px;
+        width: 23%;
+        margin:0 0.2rem;
+
+        }
+        @media(max-width:451px){
+            font-size:rem(11);
+        height:60px;
+        width: 23%;
+        margin:0 0.2rem;
+
+        }
+        &:hover{
+            border: 1px solid $turquoise-blue;
+            color:$turquoise-blue;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        }
+        &.active{
+            border: 1px solid $turquoise-blue;
+            color:$turquoise-blue;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        }
+     
+    }
+    .backSvg{
+      border-right:1px solid $warm-grey;
+      width:45px;
+          height:15px;
+          cursor: pointer;
+      svg{
+          width: 45px;
+          height:25px;
+          fill:black;
+      }
+   
+    }
+    .nextSvg{
+        border-left:1px solid $warm-grey;
+        width: 45px;
+        cursor: pointer;
+          height:15px;
+          svg{
+          width: 45px;
+          height:25px;
+          fill:$warm-grey;
+          }
+      }
+}

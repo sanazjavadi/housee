@@ -1,0 +1,43 @@
+@import '../../../../../../globalStyles/index.scss';
+
+
+.modal-80w {
+    width: 80%;
+    max-width: 963px;
+   
+    height: 100vh;
+    @media (max-width: 991px) {
+      width: 90%;
+      
+    }
+    @media (max-width: 800px) {
+      width: 100vw;
+    height: 100vh;
+     margin:0;
+      overflow: hidden;
+      position: relative;
+      
+    }
+  }
+  .title{
+    font-size: rem(18);
+    font-family: SemiBoldFont;
+    color:$greyish-brown;
+  }
+.close{
+    position: absolute;
+    left: 0.2rem;
+    top:0.5rem;
+    cursor: pointer;
+    z-index: 5;
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+.content{
+    font-size: rem(18);
+    font-family: Regular;
+    color:$greyish-brown;
+    z-index: 1;
+}

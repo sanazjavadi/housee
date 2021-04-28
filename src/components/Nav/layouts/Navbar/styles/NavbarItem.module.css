@@ -1,0 +1,40 @@
+.NavbarItemTitle {
+  background: transparent;
+  border: 0;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 2rem 1.5rem 1.2rem 1.5rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  cursor: pointer;
+  /* position above the dropdown, otherwise the dropdown will cover up the bottom sliver of the buttons */
+  position: relative;
+  z-index: 2;
+}
+
+.NavbarItemTitle:hover, .NavbarItemTitle:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.NavbarItemEl {
+  position: relative;
+}
+
+.DropdownSlot {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+}
+/*# sourceMappingURL=NavbarItem.module.css.map */

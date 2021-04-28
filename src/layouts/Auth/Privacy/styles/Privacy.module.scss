@@ -1,0 +1,92 @@
+@import '../../../../globalStyles/index.scss';
+.privacy{
+    width: 100%;
+    overflow-y: scroll;
+    min-width: 660px;
+    margin-left: rem($spacing-l);
+    max-height: 400px;
+    margin-bottom: 9rem;
+    h4{
+        font-size: rem(18);
+         font-family: SemiBoldFont;
+        color:$greyish-brown;
+        margin-bottom: rem($spacing-s);
+    }
+    h5{
+        color:$greyish-brown-two;
+        font-size: rem(15);
+        margin-bottom: rem($spacing-s);
+        font-family: Regular;
+    }
+    p{
+        font-size:rem(15);
+        font-family: Regular;
+        text-align: left;
+        color:$greyish-brown;
+        padding-right: 2rem;
+        line-height: 1.33;
+        margin-bottom: rem($spacing-s);
+    }
+    &::-webkit-scrollbar{
+        width: 5px;
+ background-color: $white;
+ outline: none;
+ 
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $pinkish-grey;
+        border-radius: 10px;
+    
+  
+    }
+}
+.groupBtn{
+    width:50%;
+    display: flex;
+    align-items: center;
+    margin-left:1.5rem;
+    justify-content: space-between;
+  
+    .declineBtn{
+        width: 45%;
+        margin-left:3.4rem;
+        button{
+            height: 48px;
+            font-size: rem(15);
+            font-family: SemiBoldFont;
+        }
+    }
+    .acceptBtn{
+        width:35%;
+        button{
+            height: 48px;
+            font-size: rem(15);
+            font-family: SemiBoldFont;
+        }
+    }
+}
+.selectInput{
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    p{
+        font-size:rem(13);
+        color:$warm-grey;
+        font-family: Regular;
+        margin-left: 0.3rem;
+        margin-bottom: 0;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        border: $warm-grey;
+    }
+    
+}
+.bottomSection{
+    min-width: 560px ;
+    margin-left: 3rem;
+   
+}

@@ -1,0 +1,90 @@
+@import "../../../../../globalStyles/index.scss";
+
+.overview-title-section {
+  border-bottom: 1px solid $pinkish-grey;
+  @media(max-width:600px){
+    margin-top:45px;
+  }
+  .title {
+    color: $warm-grey;
+    font-size: rem(18);
+    font-family: Regular;
+    @media(max-width: 459px){
+      font-size: rem(16);
+    }
+    @media(max-width: 403px){
+      font-size: rem(14);
+    }
+    @media(max-width: 359px){
+      font-size: rem(12);
+    }
+  }
+}
+
+//overview section
+.overview-section {
+  background-color: $white;
+  padding: rem($spacing-s) 0;
+  @media(max-width:600px){
+    display: none;
+  }
+  .btn-group {
+    display: flex;
+    .schedule-btn {
+      margin-left: rem($spacing-s);
+      width:27%;
+      min-width: 168px;
+    }
+    .favorite-btn {
+      width: 24%;
+      margin-left: rem($spacing-s);
+      min-width: 168px;
+      @media(max-width: 1200px){
+        width:26%;
+      }
+    }
+    .share-btn {
+      width:24%;
+      min-width: 168px;
+      @media(max-width: 1200px){
+        width:26%;
+      }
+    }
+  }
+  .total-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .title {
+      color: $detail-title-price;
+      font-size: rem(19);
+      font-family: Regular;
+      @media(max-width: 1200px){
+        font-size: rem(18);
+      }
+    }
+    .price {
+      color: $turquoise-blue;
+      font-size: rem(21);
+      margin-left: em($spacing-xs, 21);
+      font-family: SemiBoldFont;
+      @media(max-width: 1200px){
+        font-size: rem(19);
+      }
+    }
+    .status {
+      svg{
+        width: 16px;
+        height: 16px;
+      }
+      color: $green;
+      font-size: rem(19);
+      margin-left: em($spacing-xs, 21);
+      font-family: Regular;
+      @media(max-width: 1200px){
+        font-size: rem(18);
+      }
+    }
+  }
+}

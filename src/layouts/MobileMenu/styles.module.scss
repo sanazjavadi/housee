@@ -1,0 +1,140 @@
+@import "../../globalStyles/index.scss";
+
+.hamburgerMenu {
+  background-color: white;
+  min-height: 100vh;
+  width:80vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $layer-mobilemenu-z-index;
+     
+  header {
+    border-bottom: 1px solid $purpley-grey;
+    .profile {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .profile-img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        //    border:1px solid $warm-grey;
+        img {
+          width: 20px;
+          height: 20px;
+          margin: auto;
+        }
+      }
+      .profile-name {
+        font-size: rem(13);
+        font-family: Regular;
+        color: $purpley-grey;
+        &:hover{
+          opacity: 0.8;
+        }
+        svg {
+          width: 10px;
+          height: 10px;
+          z-index: 22;
+        }
+      }
+    }
+  }
+  .dashboard-dropdown {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin: rem($spacing-s) 0;
+
+      li {
+        font-size: rem(16);
+        font-family: Regular;
+        width: 100%;
+        color: $warm-grey;
+        padding: 0.7rem 0;
+        
+        cursor: pointer;
+        span {
+          margin: 1rem;
+        }
+        &:hover {
+          background-color: $white;
+          color: $turquoise-blue;
+        }
+      }
+    }
+    border-bottom: 1px solid $purpley-grey;
+  }
+ 
+  .hamburger-links {
+    .sub-list {
+      list-style: none;
+      margin: 0;
+      margin-top: rem($spacing-l);
+      padding: 0;
+      transition: all 0.5 linear;
+      span {
+        margin-left: rem($spacing-s);
+      }
+      svg {
+        margin-right: rem($spacing-l);
+      }
+      li {
+        font-size: rem(16);
+        font-family: Regular;
+        color: $greyish-brown;
+        line-height: 1.19;
+        text-align: left;
+        padding: em($spacing-xs, 16) 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+   &:hover{
+     opacity: 0.8;
+   }
+        cursor: pointer;
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    .nested-list {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5 linear;
+
+      li {
+        width: 100%;
+        font-size: rem(15);
+        text-align: center;
+        color: #707070;
+        display: flex;
+        justify-content: center;
+        font-family: SemiBoldFont;
+        margin: em($spacing-s, 15) 0;
+        &:hover {
+          background-color: $white;
+          color: $turquoise-blue;
+        }
+      }
+    }
+  }
+}
+.close-btn {
+  svg {
+    margin-right: rem($spacing-s);
+    cursor: pointer;
+  }
+}

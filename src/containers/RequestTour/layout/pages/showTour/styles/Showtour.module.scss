@@ -1,0 +1,91 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.showtour {
+  margin-top: rem($spacing-xxl-2);
+  p {
+    margin: 0;
+  }
+
+  .herosvg {
+    position: relative;
+    .path {
+      position: absolute;
+      z-index: -1;
+      bottom: -5px;
+      right: -5px;
+    }
+  }
+  .videoTour{
+      position: relative;
+      color:#0089d8;
+      font-family: SemiBoldFont;
+      font-size: rem(20);
+      &::before{
+          content:'v';
+          font-family: SemiBoldFont;
+        z-index: -1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: rem(25);
+          width: 32px;
+          height: 32px;
+          padding-bottom:0.2em;
+          background-color: #9feefa;
+          color:white;
+          border-radius: 50%;
+          position: absolute;
+          left:-23px;
+      }
+  }
+  .avatar{
+      p{
+          color:$greyish-brown-two;
+          font-family: SemiBoldFont;
+          font-size: rem(16);
+          margin-left:rem($spacing-xs)
+      }
+
+    
+  }
+  .job{
+    color:$greyish-brown;
+    font-family: SemiBoldFont;
+    font-size: rem(16);
+    margin-top:rem($spacing-xs)
+}
+
+.datesection{
+    margin-top:rem($spacing-xl);
+    width: 100%;
+    align-items: center;
+    @media(max-width:831px){
+        margin-top:rem($spacing-l);
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        span{
+            margin-top:rem($spacing-xs);
+        }
+    }
+    p{
+        color:$warm-grey;
+        font-size: rem(17);
+        font-family: Regular;
+        margin-left:rem($spacing-xxs)
+    }
+}
+
+.btngruop{
+    width: 100%;
+    .btndash{
+        width: 50%;
+        @media(max-width:831px){
+            width: 75%;
+        }
+    }
+}
+}

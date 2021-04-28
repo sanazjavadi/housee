@@ -1,0 +1,102 @@
+.DropdownRoot {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation-name: DropdownRoot;
+          animation-name: DropdownRoot;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  /* use 'forwards' to prevent flicker on leave animation */
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /* flex styles will center the caret child component */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -20px;
+}
+
+.DropdownRoot .caret {
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white;
+  z-index: 1;
+  position: relative;
+}
+
+.DropdownBackground {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background-color: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1);
+          box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1);
+}
+
+.InvertedDiv {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.InvertedDiv:first-of-type {
+  z-index: 1;
+}
+
+.InvertedDiv:not(:first-of-type) {
+  z-index: -1;
+}
+
+.AltBackground {
+  background-color: grey;
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  z-index: 0;
+  -webkit-transition: -webkit-transform 3ms;
+  transition: -webkit-transform 3ms;
+  transition: transform 3ms;
+  transition: transform 3ms, -webkit-transform 3ms;
+}
+
+@-webkit-keyframes DropdownRoot {
+  from {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes DropdownRoot {
+  from {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=NavbarContainer.module.css.map */

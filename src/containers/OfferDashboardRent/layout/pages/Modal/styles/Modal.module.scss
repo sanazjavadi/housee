@@ -1,0 +1,99 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.modal-80w {
+  width: 80%;
+  max-width: 963px;
+
+  @media (max-width: 991px) {
+    width: 90%;
+  }
+  @media (max-width: 800px) {
+    width: 100vw;
+    height: 100vh;
+     margin:0;
+      overflow: hidden;
+      position: relative;
+    
+  }
+  .boy-layout {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    &::before {
+      bottom: 100px;
+      left: 0;
+      z-index: 0;
+      content: "";
+      display: block;
+      min-height: 150px;
+      min-width: 150px;
+      width: 35vh;
+      height: 35vh;
+      background-color: #eeebeb;
+      background-size: 1600% 1600%;
+      transform-origin: 50% 50%;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      animation: transform 50s ease-in-out infinite both alternate, movement 40s ease-in-out infinite both;
+    }
+  }
+  .boy {
+    width: max-content;
+    height: max-content;
+    z-index: 1;
+  }
+}
+.close {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.5rem;
+  cursor: pointer;
+  z-index: 5;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.content {
+  font-size: rem(18);
+  font-family: Regular;
+  color: $greyish-brown;
+  z-index: 1;
+  @media(max-width:500px){
+    font-size: rem(15);
+  }
+}
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@keyframes movement {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(20%) rotateY(10deg);
+  }
+}

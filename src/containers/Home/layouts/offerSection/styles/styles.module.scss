@@ -1,0 +1,103 @@
+@import "../../../../../globalStyles/index.scss";
+
+.marginSection {
+  // background-color: red;
+  will-change: transform;
+  margin-top: rem($spacing-l);
+  .content {
+    color: $greyish-brown-two;
+    @extend %font-heading;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    .dot-svg {
+      margin-right: rem($spacing-xxs);
+      @media (max-width: 500px) {
+        width: 33px;
+        height: 33px;
+      }
+    }
+    @media (max-width: 991px) {
+      margin-bottom: rem($spacing-s);
+    }
+    @media (max-width: 450px) {
+      margin-bottom: rem($spacing-xs);
+      font-size: rem(13);
+    }
+  }
+
+  .girl-svg {
+    @media (max-width: 500px) {
+      width: 196.984px;
+      height: 110px;
+      margin-left: 1rem;
+    }
+  }
+
+  //// our list style
+  .optionsOffer {
+    .optionsRow {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: rem($spacing-xs);
+      padding: 0;
+      p {
+        @extend %font-medium;
+        @media (max-width: 500px) {
+          font-size: rem(12);
+        }
+      }
+    }
+
+    .expand-offer-row {
+      margin-bottom: rem($spacing-l);
+      padding: 0;
+      p {
+        margin: 0;
+        @extend %font-medium;
+        color: $color-text;
+        text-align: left;
+        @media (max-width: 450px) {
+          font-size: rem(13);
+        }
+      }
+      svg {
+        @media (max-width: 450px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      @media (max-width: 450px) {
+        margin-bottom: rem($spacing-xs);
+      }
+    }
+  }
+}
+
+.readmore {
+  float: right;
+  margin-bottom: rem($spacing-xl);
+  @media (max-width: 450px) {
+    margin-bottom: 0;
+  }
+  span {
+    color: $turquoise-blue;
+    @extend %font-medium;
+    text-decoration: none;
+    cursor: pointer;
+    @media (max-width: 450px) {
+      font-size: rem(13);
+    }
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+    @media (max-width: 450px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

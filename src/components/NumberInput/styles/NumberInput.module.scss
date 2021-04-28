@@ -1,0 +1,22 @@
+@import '../../../globalStyles/index.scss';
+
+  .InputNumber{
+      display: flex;
+      align-items: center;
+   .number{
+       background-color: white;
+       color:$turquoise-blue;
+       font-size:20px;
+       border-radius: 5px;
+       width: 36px;
+       height: 36px;
+       margin:0 1rem;
+       border:1px solid $turquoise-blue;
+       font-family: SemiBoldFont;
+   }
+   span{
+       color:$turquoise-blue;
+       font-size: 25px;
+       font-family: SemiBoldFont;
+   }
+  }

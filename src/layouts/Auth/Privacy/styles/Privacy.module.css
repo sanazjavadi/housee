@@ -1,0 +1,139 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.privacy {
+  width: 100%;
+  overflow-y: scroll;
+  min-width: 660px;
+  margin-left: 2.5rem;
+  max-height: 400px;
+  margin-bottom: 9rem;
+}
+
+.privacy h4 {
+  font-size: 1.125rem;
+  font-family: SemiBoldFont;
+  color: #595959;
+  margin-bottom: 1.5rem;
+}
+
+.privacy h5 {
+  color: #3f3f3f;
+  font-size: 0.9375rem;
+  margin-bottom: 1.5rem;
+  font-family: Regular;
+}
+
+.privacy p {
+  font-size: 0.9375rem;
+  font-family: Regular;
+  text-align: left;
+  color: #595959;
+  padding-right: 2rem;
+  line-height: 1.33;
+  margin-bottom: 1.5rem;
+}
+
+.privacy::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f7f7f7;
+  outline: none;
+}
+
+.privacy::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 10px;
+}
+
+.groupBtn {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.groupBtn .declineBtn {
+  width: 45%;
+  margin-left: 3.4rem;
+}
+
+.groupBtn .declineBtn button {
+  height: 48px;
+  font-size: 0.9375rem;
+  font-family: SemiBoldFont;
+}
+
+.groupBtn .acceptBtn {
+  width: 35%;
+}
+
+.groupBtn .acceptBtn button {
+  height: 48px;
+  font-size: 0.9375rem;
+  font-family: SemiBoldFont;
+}
+
+.selectInput {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectInput p {
+  font-size: 0.8125rem;
+  color: #7b7b7b;
+  font-family: Regular;
+  margin-left: 0.3rem;
+  margin-bottom: 0;
+}
+
+.selectInput input {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: #7b7b7b;
+}
+
+.bottomSection {
+  min-width: 560px;
+  margin-left: 3rem;
+}
+/*# sourceMappingURL=Privacy.module.css.map */

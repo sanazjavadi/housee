@@ -1,0 +1,33 @@
+
+
+// CONTENT
+$size-content-width-max: 50rem;
+$size-content-width-min: 25rem;
+
+// HEADER
+$header-heigth: 73px;  
+$header-mobile-height:47px;
+
+//grid units is px
+$spacing-xxs-1:4;
+$spacing-xxs: 8;
+$spacing-xs: 16;
+$spacing-s: 24;
+$spacing-m: 32;
+$spacing-l: 40;
+$spacing-xl: 48;
+$spacing-xxl: 56;
+$spacing-xxl-2: 64;
+$spacing-xxl-3:72;
+$spacing-xxl-4:80;
+
+//browser font
+$browser-context: 16;
+
+
+@function rem($pixels, $context: $browser-context) {
+  @return ($pixels / $context) * 1rem;
+}
+@function em($pixels, $context) {
+  @return ($pixels / $context) * 1em;
+}

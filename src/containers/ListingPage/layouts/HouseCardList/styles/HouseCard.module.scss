@@ -1,0 +1,65 @@
+@import '../../../../../globalStyles/index.scss';
+
+.housecard-row-map{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left:rem($spacing-xs);
+  @media(max-width:1200px){
+    margin-left:rem($spacing-xxs);
+    margin-right:rem($spacing-xxs);
+  }
+  @media(max-width:991px){
+    margin-left:rem($spacing-xxs);
+    
+  }
+  .housecard{
+    width: 49%;
+    margin-top:rem($spacing-xs);
+    @media(max-width:1200px){
+      width:47%;
+     display: flex;
+     justify-content: center;
+     margin:rem($spacing-xs) auto 0;
+    }
+    @media(max-width:1060px){
+      width:80%;
+     display: flex;
+     justify-content: center;
+     margin:rem($spacing-xs) auto 0;
+    }
+    @media(max-width:991px){
+      width:90%;
+     display: flex;
+     justify-content: center;
+     margin:rem($spacing-xs) auto 0;
+    }
+  }
+  
+}
+.housecard-row{
+  flex-wrap:wrap;
+  justify-content: space-between;
+  .house-card-mobile{
+   
+    width: 32.33%;
+    margin-top: rem($spacing-s);
+    @media(max-width:1080px){
+     width: 45%;
+     margin: rem($spacing-s) auto;
+ 
+  }
+  @media(max-width:780px){
+   width: 46%;
+   margin: rem($spacing-s) auto;
+ }
+ @media(max-width:718px){
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: rem($spacing-s) auto;
+}
+
+ }
+ 
+}
+

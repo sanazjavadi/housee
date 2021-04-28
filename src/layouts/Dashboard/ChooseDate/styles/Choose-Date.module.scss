@@ -1,0 +1,36 @@
+@import '../../../../globalStyles/index.scss';
+
+
+
+.calender-title{
+  font-family: SemiBoldFont;
+  font-size: rem(16);
+  color:$greyish-brown;
+}
+.calender{
+  width:100%;
+  // min-width: 356px;
+  height: 280px;
+  border-radius: 8px;
+  border:1px solid $pinkish-grey;
+ 
+}
+.nextbtn{
+  float: right;
+  margin-top: 100px;
+  width: 100%;
+
+  .cancel{
+    svg{
+      width:22px;
+      height:22px;
+    }
+    span{
+      cursor: pointer;
+      font-size: rem(15);
+      color:$turquoise-blue;
+      font-family: Regular;
+    }
+  }
+}
+

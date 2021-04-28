@@ -1,0 +1,110 @@
+@import '../../../globalStyles/index.scss';
+
+.slider {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  background-color: $pinkish-grey;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  background: linear-gradient(
+    to right,
+    rgb(0, 187, 216) 0%,
+    rgb(0, 187, 216) 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(199, 199, 199) 0%
+  );
+
+
+}
+.slider:focus {
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 38px;
+  margin: -10px 0;
+  width: 38px;
+  cursor: pointer;
+  border: 6px solid $turquoise-blue;
+  background: white;
+  border-radius: 50%;
+}
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  margin: -10px 0;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+  background: $turquoise-blue;
+  border-radius: 50%;
+}
+.slider::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: $turquoise-blue;
+  border: 7px solid $turquoise-blue;
+}
+.slider::-ms-fill-lower {
+  background: $turquoise-blue;
+  border-radius: 10px;
+}
+
+//small slider
+
+
+.slider-sm {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  background-color: $pinkish-grey;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  background: linear-gradient(
+    to right,
+    rgb(0, 187, 216) 0%,
+    rgb(0, 187, 216) 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(199, 199, 199) 0%
+  );
+
+
+}
+.slider-sm :focus {
+  outline: none;
+}
+.slider-sm::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  margin: -10px 0;
+  width: 30px;
+  cursor: pointer;
+  border: 6px solid $turquoise-blue;
+  background: white;
+  border-radius: 50%;
+}
+.slider-sm::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  margin: -10px 0;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+  background: $turquoise-blue;
+  border-radius: 50%;
+}
+.slider-sm::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: $turquoise-blue;
+  border: 7px solid $turquoise-blue;
+}
+.slider-sm::-ms-fill-lower {
+  background: $turquoise-blue;
+  border-radius: 10px;
+}

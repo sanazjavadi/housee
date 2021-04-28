@@ -1,0 +1,16 @@
+
+.FadeContent{
+
+    animation-name: getFadeContainerKeyFrame;
+    animation-duration:300ms;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+@keyframes getFadeContainerKeyFrame{
+    to {
+        transform: translateX(0px);
+        opacity: 0;
+      }
+}

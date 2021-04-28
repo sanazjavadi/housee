@@ -1,0 +1,89 @@
+@import "../../../../../../../globalStyles/index.scss";
+
+.historical{
+    padding-top:rem($spacing-xs);
+    border-bottom: 1px solid $pinkish-grey;
+
+    .tree{
+   border:1px solid $pinkish-grey;
+   border-radius:5px;
+   width: 100%;
+   height:329px;
+   margin-bottom: rem($spacing-m);
+    }
+.group-btn{
+    width: 290px;
+    .rent-btn{
+        button{
+          border-top-right-radius:0px ;
+          border-bottom-right-radius:0px ;
+      
+        &:hover{
+            border:1px solid $turquoise-blue;
+            color:$turquoise-blue;
+        }
+        }
+    }
+    .rent-btn-active{
+        button{
+          border-top-right-radius:0px ;
+          border-bottom-right-radius:0px ;
+        border:1px solid $turquoise-blue;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        color:$turquoise-blue;
+        }
+    }
+    .buy-btn{
+        button{
+          border-top-left-radius:0px ;
+          border-bottom-left-radius:0px ;
+      
+          &:hover{
+            border:1px solid $turquoise-blue;
+            color:$turquoise-blue;
+        }
+        }
+    }
+    .buy-btn-active{
+        button{
+          border-top-left-radius:0px ;
+          border-bottom-left-radius:0px ;
+          border:1px solid $turquoise-blue;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          color:$turquoise-blue;
+        }
+    }
+
+
+ 
+}
+.historical-list{
+    margin-top:rem($spacing-m);
+    font-size: rem(16);
+    color:$greyish-brown-two;
+    font-family: Regular;
+  
+    li{
+        margin-bottom: rem($spacing-m);
+        .liststyle{
+          
+            width: 13px;
+            height: 13px;
+            border-radius: 100%;
+            background-color: $turquoise-blue;
+        }
+    }
+}
+
+
+.price{
+    font-size: rem(18);
+    color:$warm-grey;
+    font-family: Regular;
+}
+.percentage{
+    font-size: rem(17);
+    color:$greyish-brown-two;
+    font-family:SemiBoldFont;
+}
+}

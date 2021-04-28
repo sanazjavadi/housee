@@ -1,0 +1,50 @@
+@import '../../../../../globalStyles/index.scss';
+
+
+
+.nav-section{
+    border-bottom: 1px solid $pinkish-grey;
+    .nav-list{
+        margin-top:73px;
+        @media(max-width: 991px){
+            margin-top:45px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size:rem(16);
+            color:$warm-grey;
+            padding:em($spacing-xs,17);
+            font-family: Regular;
+            @media(max-width: 991px){
+                padding-left:0;
+                padding-right:0;
+            }
+            li{
+                cursor: pointer;
+                &:hover{
+                    color:$turquoise-blue;
+                }
+                @media(max-width: 991px){
+              
+                    font-size:rem(15);
+                }
+                @media(max-width: 790px){
+              
+                    font-size:rem(13);
+                }
+                @media(max-width: 860px){
+                    padding-left:em($spacing-xl,17);
+                    padding-right:em($spacing-xl,17);
+                    padding-top:em($spacing-s,17);
+                    padding-bottom:em($spacing-s,17);
+                    font-size:rem(13);
+                }
+            }
+          
+    
+        }
+    }
+}

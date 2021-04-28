@@ -1,0 +1,156 @@
+@import "../../../globalStyles/index.scss";
+
+.modal-80w {
+  width: 80%;
+  max-width: 963px;
+ 
+  @media (max-width: 991px) {
+    width: 90%;
+    
+  }
+  @media (max-width: 800px) {
+    width: 100vw;
+  height: 100vh;
+   margin:0;
+    overflow: hidden;
+    position: relative;
+    
+  }
+}
+.tabs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+  font-size: rem(20);
+  font-family: Regular;
+  cursor: pointer;
+  h5 {
+    border-left: 2px solid $pinkish-grey;
+    margin-bottom: 4vh;
+    padding: 5vh 0 5vh 15px;
+  }
+}
+
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+ .innertab{
+   width: 100%;
+   max-width: 398px;
+ }
+  
+  @media (max-width: 991px) {
+    width: 80%;
+  }
+  @media (max-width: 800px) {
+    
+     margin-left: 2rem;
+    width: 90%;
+   height: 100vh;
+   overflow: hidden;
+   position: relative;
+    
+  }
+  @media (max-width: 700px) {
+    margin-left:0;
+   width: 60%;
+  height: 100vh;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+  max-width: 385px;
+   
+ }
+ @media (max-width:600px) {
+  margin-left:0;
+ width:80%;
+height: 100vh;
+margin-top: 60px;
+overflow: hidden;
+position: relative;
+
+ 
+}
+ @media (max-width: 450px) {
+  margin-left:0;
+ width: 90%;
+height: 100vh;
+margin-top: 60px;
+overflow: hidden;
+position: relative;
+ 
+}
+@media (max-width: 375px) {
+  margin-left:0;
+ width: 85%;
+height: 100vh;
+justify-content: flex-start;
+margin-top: 144px;
+overflow: hidden;
+position: relative;
+ 
+}
+}
+
+.hover {
+  color: $turquoise-blue;
+  border-left: 2px solid $turquoise-blue !important;
+}
+
+.body {
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $warm-grey;
+  font-size: 20px;
+  font-family: SegoeUI;
+  .close-btn {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    cursor: pointer;
+    left: 0.5rem;
+    top: 1rem;
+    z-index: 99;
+  }
+}
+
+
+
+//mobile style
+.Mobiletabs{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top:46px;
+  left:0;
+  z-index: 99999;
+
+  .groupbtn{
+    width:50%;
+    cursor: pointer;
+    button{
+      font-size: rem(13);
+      &:focus{
+        color: $turquoise-blue;
+        border-bottom: 1px solid $turquoise-blue !important;
+      }
+      &:active{
+        color: $turquoise-blue;
+        border-bottom: 1px solid $turquoise-blue !important;
+      }
+  
+    }
+  
+   
+  }
+}
+

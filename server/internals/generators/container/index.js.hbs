@@ -1,0 +1,46 @@
+/**
+ *
+ * {{ properCase name }}
+ *
+ */
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
+
+import { compose } from 'redux';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { useInjectReducer } from 'utils/inject-reducer';
+import { useInjectSaga } from 'utils/inject-saga';
+
+import saga from './saga';
+import reducer from './reducer';
+
+// Scoped Styles
+import styles from './style/{{properCase name}}.module.scss'
+
+// import {  } from './actions';
+// import {  } from './selectors';
+
+export function {{ properCase name }}() {
+  useInjectSaga({ key: '{{ properCase name }}', saga });
+  useInjectReducer({ key: '{{ properCase name }}', reducer });
+
+  return (
+    <div>
+      <h1>Container {{ properCase name }}</h1>
+    </div>
+  );
+}
+
+const mapStateToProps = createStructuredSelector({});
+
+export function mapDispatchToProps(dispatch) {}
+
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+
+{{ properCase name }}.propTypes = {
+ 
+};
+
+export default compose(withConnect, memo)({{ properCase name }});

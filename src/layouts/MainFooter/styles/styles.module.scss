@@ -1,0 +1,132 @@
+@import "../../../globalStyles/index.scss";
+
+.footer {
+  margin-top: rem($spacing-xxl-3);
+  padding-top: rem($spacing-xxl-2);
+  border-top: 2px solid $like-white;
+@media(max-width:670px){
+  display: none;
+}
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .footer-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li a {
+          color: $greyish-brown;
+          font-family: Regular;
+          font-size: rem(14);
+          text-align: left;
+          opacity: 0.6;
+          line-height: 1.71;
+          text-decoration: none;
+          &:hover{
+            opacity: 1;
+           
+          }
+        }
+      }
+    }
+    .footer-title {
+      color: $greyish-brown;
+     @extend  %font-small;
+      padding-bottom: em($spacing-s, 14);
+      border-bottom: 2px solid $turquoise-blue;
+      text-align: center;
+     
+    }
+  }
+
+  .bottom-footer {
+    width: 100%;
+    border-top: 2px solid $like-white;
+    padding: 2rem 0;
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      li {
+        &:nth-child(2) {
+          border-left: 2px solid $warm-grey;
+          border-right: 2px solid $warm-grey;
+        }
+        a {
+          color: $footer-font-color;
+          font-size: rem(14);
+          opacity: 0.6;
+          cursor: pointer;
+          text-decoration: none;
+          font-family: Regular;
+        
+          @media (max-width: 370px) {
+            font-size: rem(10);
+          }
+          @media (max-width: 340px) {
+            font-size: rem(9);
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: em($spacing-s, 17);
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .top-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: self-end;
+
+    .footer-list {
+      width: 40%;
+      padding: 2rem 3rem;
+      li {
+        text-align: center;
+      }
+
+      &:last-child {
+        margin: auto;
+      }
+
+      @media (max-width: 500px) {
+        width: 50%;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
+.footerMobile {
+  display: none;
+}

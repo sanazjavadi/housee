@@ -1,0 +1,68 @@
+@import "../../../../../../../globalStyles/index.scss";
+
+.listing{
+
+    padding-top:rem($spacing-xs);
+    .group-btn{
+        width: 380px;
+        .rent-btn{
+            button{
+             border-radius: 0px;
+          
+            &:hover{
+                border:1px solid $turquoise-blue;
+                color:$turquoise-blue;
+            }
+            }
+        }
+        .rent-btn-active{
+            button{
+              border-top-right-radius:0px ;
+              border-bottom-right-radius:0px ;
+            border:1px solid $turquoise-blue;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            color:$turquoise-blue;
+            }
+        }
+        .buy-btn{
+            button{
+              border-top-left-radius:0px ;
+              border-bottom-left-radius:0px ;
+          
+              &:hover{
+                border:1px solid $turquoise-blue;
+                color:$turquoise-blue;
+            }
+            }
+        }
+        .buy-btn-active{
+            button{
+              border-top-left-radius:0px ;
+              border-bottom-left-radius:0px ;
+              border:1px solid $turquoise-blue;
+              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+              color:$turquoise-blue;
+            }
+        }
+    
+    
+     
+    }
+    .first{
+        border: 1px solid #e3e3e3;
+        p{
+            color:$pinkish-grey;
+            font-family: Regular;
+            font-size: rem(14);
+            margin:0;
+            border-bottom: 1px solid #e3e3e3;
+            padding:rem($spacing-xs) 0;
+        }
+        span{
+            color:#707070;
+            font-family: Regular;
+            font-size: rem(16);
+        }
+    }
+
+}

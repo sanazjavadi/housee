@@ -1,0 +1,42 @@
+@import '../../../../../globalStyles/index.scss';
+
+    .hero-form{
+        display:block;
+        background-color: white;
+        height: 56px;
+        width: 678px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius:4px;
+        margin-top:334px;
+     .your-city-select{
+         width: 45%;
+     }
+     .rent-select{
+         width: 43%;
+     }
+        button{
+            text-decoration: none;
+            outline: none;
+            border:none;
+            background-color: $turquoise-blue;
+            color: white;
+            width: 21%;
+            font-size:$font-size-medium;
+            font-family: SemiBoldFont;
+            font-weight: 600;
+            height: 100%;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .path{
+            width:1px;
+          
+            height:30px;
+            background-color:$pinkish-grey;
+
+        }
+    
+    }
+

@@ -1,0 +1,25 @@
+@import "../../../../../globalStyles/index.scss";
+
+.homelist-section {
+  margin-top: rem($spacing-l);
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem($spacing-xs);
+    .circle {
+      width: 16px;
+      height: 16px;
+      background-color: $pinkish-grey;
+      border-radius: 50%;
+    }
+
+    p {
+      font-size: rem(17);
+      font-family: SemiBoldFont;
+      color: #6e6e6e;
+      text-align: left;
+      margin-bottom: 0;
+      margin-left: rem($spacing-xxs);
+    }
+  }
+}

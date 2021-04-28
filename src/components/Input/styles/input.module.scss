@@ -1,0 +1,165 @@
+@import "../../../globalStyles/index.scss";
+
+.input-material-container {
+  position: relative;
+ 
+  .inputIcon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+
+  .input {
+    border: 0;
+    border-bottom: 1px solid $warm-grey;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    // min-width: 398px;
+    color: $greyish-brown;
+    font-size: 17px;
+    text-indent: 12px;
+    height:36px;
+    font-family: Regular;
+    &:focus,
+    &:valid {
+      border-bottom: 1px solid $warm-grey;
+    }
+    // &:invalid {
+    //   border-bottom: 1px solid #ee7700;
+    // }
+  
+  }
+
+  input:focus ~ label, input:valid ~ label 		{
+ 
+    color: $warm-grey;
+    font-size: 15px;
+    top: -25px;
+    pointer-events: none;
+  }
+  .input-danger {
+    border: 0;
+    border-bottom: 1px solid #ee7700;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    min-width: 398px;
+    color: $greyish-brown;
+    font-size: rem(15);
+    font-family: Regular;
+
+    &:focus {
+      border-bottom: 2px solid #ee7700;
+    }
+    &:focus + .label,
+    &:valid + .label {
+      color: $warm-grey;
+      font-size: rem(15);
+      font-family: Regular;
+      top: -25px;
+      pointer-events: none;
+    }
+  }
+  .label {
+    top: 0;
+    left: 0;
+    right: 0;
+    color: $warm-grey;
+    cursor: pointer;
+    position: absolute;
+    font-size: rem(15);
+    font-family: Regular;
+    transition: 0.2s ease-in-out;
+
+  }
+
+
+}
+.input-material-container:focus{
+  & .label{
+    color: $warm-grey;
+    font-size: 15px;
+    top: -25px;
+    pointer-events: none;
+  }
+ 
+}
+.input-default-container {
+  position: relative;
+  .inputIcon {
+    position: absolute;
+    left:10px;
+    height: 100%;
+    width:20px;
+   svg{
+    position: absolute;
+    top:55%;
+    left:10px;
+    transform: translate(-55%,-10px);
+   }
+}
+.txterror{
+  color:$orange;
+  font-family: Regular;
+  font-size: 15px;
+}
+  .input {
+    width: 100%;
+    height: 37px;
+    border-radius: 3px;
+    border: 1px solid $pinkish-grey;
+    text-indent: 28px;
+    color: #707070;
+    font-family: Regular;
+    &.error{
+      border:1px solid $orange;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $pinkish-grey;
+      text-indent: 28px;
+    }
+    &::placeholder {
+      text-indent: 28px;
+      font-size: rem(15);
+      font-family: Regular;
+    }
+    &:active {
+      text-indent: 28px;
+    }
+  }
+  .label{
+  color:$greyish-brown;
+  font-size: rem(17);
+  font-family: Regular;
+  }
+}
+.input-menuInput-container {
+  .inputIcon {
+    position: absolute;
+    left: 20px;
+  }
+  .input {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    border: none;
+    text-indent: 45px;
+    color: #707070;
+    font-size: rem(15);
+    font-family: Regular;
+    &:focus {
+      outline: none;
+      border: none;
+      text-indent: 45px;
+    }
+    &::placeholder {
+      text-indent: 45px;
+    }
+    &::active {
+      text-indent: 45px;
+    }
+  }
+}

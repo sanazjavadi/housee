@@ -1,0 +1,22 @@
+@import "../../../../../../../globalStyles/index.scss";
+
+
+.offer{
+
+    padding-top:rem($spacing-xs);
+    border-bottom: 1px solid $pinkish-grey;
+    .tree{
+        border:1px solid $pinkish-grey;
+        border-radius:5px;
+        width: 100%;
+        overflow: hidden;
+        height:237px;
+        margin-bottom: rem($spacing-m);
+         }
+
+         p{
+             color:$warm-grey;
+             font-size: rem(16);
+             font-family: Regular;
+         }
+}

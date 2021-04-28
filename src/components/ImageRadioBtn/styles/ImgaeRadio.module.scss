@@ -1,0 +1,27 @@
+@import '../../../globalStyles/index.scss';
+
+.image-radio{
+    width: 100%;
+    height: 166px;
+    position: relative;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    cursor: pointer;
+    transition: all .2s linear;
+    &:hover{
+        border-top-left-radius: 30%;
+    }
+    &.active{
+        border-top-left-radius: 30%;
+    }
+    .radio-btn{
+        position: absolute;
+        right:1rem;
+        top:1rem;
+        input{
+            background-color: white;
+            border:none;
+        }
+    }
+}

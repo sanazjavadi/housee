@@ -1,0 +1,117 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.ChooseCall {
+  margin-top: 50px;
+}
+
+.ChooseCall .title {
+  font-family: Regular;
+  font-size: 1.0625rem;
+  color: #00bbd8;
+  padding-top: 0.5rem;
+  margin-left: 0.25rem;
+}
+
+.ChooseCall .choose-title {
+  color: #595959;
+  font-size: 1.125rem;
+  font-family: SemiBoldFont;
+  margin-top: 5rem;
+}
+
+@media (max-width: 500px) {
+  .ChooseCall .choose-title {
+    font-size: 1rem;
+  }
+}
+
+.ChooseCall .radiobutton label {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 500px) {
+  .ChooseCall .radiobutton label {
+    font-size: 0.9375rem;
+  }
+}
+
+.ChooseCall .radiobutton svg {
+  width: 46px;
+  height: 46px;
+  margin-left: 0.5rem;
+}
+
+.ChooseCall .vertical-card {
+  font-family: Regular;
+  width: 200px;
+}
+
+.ChooseCall .vertical-card .cancel {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.ChooseCall .vertical-card .cancel span {
+  color: #00bbd8;
+  font-family: Regular;
+  font-size: 0.9375rem;
+  margin-left: 0.5rem;
+}
+
+.ChooseCall .vertical-card .cancel span:hover {
+  opacity: 0.8;
+}
+
+.ChooseCall .vertical-card p {
+  color: #7b7b7b;
+  font-size: 0.9375rem;
+}
+
+.ChooseCall .vertical-card img {
+  width: 194.8px;
+  height: 129.8px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ChooseCall .vertical-card svg {
+  width: 19px;
+  height: 19px;
+}
+
+.ChooseCall .vertical-card span {
+  color: #595959;
+  font-size: 0.9375rem;
+  font-family: Regular;
+}
+/*# sourceMappingURL=ChooseCall.module.css.map */

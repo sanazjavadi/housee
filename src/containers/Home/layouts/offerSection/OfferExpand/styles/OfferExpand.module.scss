@@ -1,0 +1,117 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.offer-expand-section {
+  margin-top: rem($spacing-l);
+  // background-color: yellow;
+  will-change: transform;
+
+  .title {
+    color: $greyish-brown-two;
+    margin-bottom:rem($spacing-s);
+    @extend %font-heading;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    p{
+      margin:0;
+    }
+    .dot-svg{
+      margin-right:rem($spacing-xxs);
+      @media(max-width:500px){
+        width: 33px;
+        height: 33px;
+      }
+    }
+    @media(max-width:991px){
+      margin-bottom:rem($spacing-s);
+    }
+    @media (max-width: 450px) {
+     margin-left:rem($spacing-xs);
+     margin-bottom:rem($spacing-xs);
+      font-size: rem(13);
+    }
+  }
+
+  .offer{
+    margin-bottom:rem($spacing-xs);
+    @media(max-width:500px){
+      margin-bottom:0;
+    }
+    .more-offer{
+      margin-bottom:rem($spacing-m);
+      @media(max-width:450px){
+        margin-bottom:0;
+      }
+    }
+    .offer-title{
+      p{
+        color: $warm-grey;
+        font-family:SemiBoldFont;
+        font-size: rem(17);
+        margin:0;
+        margin-left:em($spacing-xxs,17);
+        @media(max-width: 768px){
+          text-align: center;
+          padding-top:em($spacing-xxs,14);
+          @media(max-width: 450px){
+            font-size: rem(14);
+            
+          }
+        }
+      }
+    }
+    .description{
+      color: $warm-grey;
+      @extend %font-medium;
+      padding-right:em($spacing-l,17);
+      padding-top:em($spacing-xxs,17);
+      @media(max-width: 768px){
+        text-align: center;
+        padding:em($spacing-xxs,17) em($spacing-l,17);
+      }
+      @media(max-width: 450px){
+        font-size: rem(13);
+       
+      }
+    }
+
+  }
+
+  .girl-svg {
+    svg{
+      @media (max-width: 500px) {
+        width: 196.984px;
+        height: 110px;
+        margin-left: 1rem;
+      }
+    }
+  
+  }
+
+
+}
+
+.readmore {
+  float: right;
+ @media(max-width:450px){
+   margin-bottom: 0;
+ }
+  span {
+    color: $turquoise-blue;
+    @extend %font-medium;
+    text-decoration: none;
+    cursor: pointer;
+    @media(max-width:450px){
+      font-size: rem(13);
+    }
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+    @media(max-width:450px){
+      width: 15px;
+    height: 15px;
+    }
+  }
+}

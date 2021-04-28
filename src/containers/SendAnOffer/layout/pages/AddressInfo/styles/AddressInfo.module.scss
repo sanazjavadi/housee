@@ -1,0 +1,35 @@
+@import '../../../../../../globalStyles/index.scss';
+
+
+.title{
+    color: $greyish-brown;
+    font-family: SemiBoldFont;
+    font-size: rem(18);
+}
+
+.label{
+    color: $warm-grey;
+    font-family: Regular;
+    font-size: rem(16);
+}
+
+.radioTitle{
+    color: $greyish-brown;
+    font-family: SemiBoldFont;
+    font-size: rem(18);
+}
+
+.formHeader{
+    color: $warm-grey;
+    font-family: SemiBoldFont;
+    font-size: rem(17);
+    @media(max-width: 910px){
+        font-size: rem(15);
+    }
+}
+
+.refrence{
+    color: $turquoise-blue;
+    font-family: Regular;
+    font-size: rem(17);
+}

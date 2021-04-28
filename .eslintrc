@@ -1,0 +1,98 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier/@typescript-eslint",
+    "airbnb-typescript",
+    "plugin:import/warnings",
+    "plugin:import/errors",
+    "plugin:import/typescript"
+  ],
+  "settings": {
+    "import/extensions": [
+      ".ts",
+      ".tsx",
+      ".js"
+    ],
+    "react": {
+      "pragma": "React",
+      "version": "*"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", "js"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    },
+    "import/core-modules": ["React"],
+    "import/ignore": [".(scss|less|css)$"]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "plugins": ["prettier", "react", "redux-saga", "react-hooks", "jest", "import"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "import/no-named-as-default": "off",
+    "react/jsx-fragments": "off",
+    "max-len": "warn",
+    "react/jsx-closing-bracket-location": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-unresolved": [2, {"commonjs": true, "amd": true}],
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "always",
+        "singleQuote": true,
+        "jsxBracketSameLine": true,
+        "trailingComma": "es5",
+        "printWidth": 120,
+        "semi": true,
+        "endOfLine": "lf"
+      }
+    ],
+    "no-unused-vars": [
+      2,
+      {
+        "vars": "all",
+        "args": "after-used"
+      }
+    ],
+    "no-console": 1,
+    "no-unexpected-multiline": "error",
+    "react/button-has-type": [
+      "error",
+      {
+        "button": true,
+        "submit": true,
+        "reset": true
+      }
+    ],
+    "react/destructuring-assignment": ["error", "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "redux-saga/no-yield-in-race": 2,
+    "redux-saga/yield-effects": 2,
+    "require-yield": 0
+  }
+}

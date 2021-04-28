@@ -1,0 +1,87 @@
+@import '../../../../../../globalStyles/index.scss';
+
+
+.NewOffer {
+    .title {
+      font-family: Regular;
+      font-size: rem(17);
+      color: $turquoise-blue;
+      padding-top: rem($spacing-xxs);
+      margin-left: rem($spacing-xxs-1);
+    
+    }
+    .main{
+        margin-top: rem($spacing-l);
+    }
+
+  .graf-title{
+      color:$warm-grey;
+      font-size: rem(15);
+      font-family: Regular;
+  }
+
+  .graf{
+    width: 100%;
+    max-width: 596px;
+    height: 237px;
+    border-radius: 5px;
+    border:1px solid $pinkish-grey;
+  }
+  
+  .content{
+      margin-top:rem($spacing-xxl);
+      padding-bottom:rem($spacing-s);
+    width: 100%;
+    max-width: 596px;
+      border-bottom: 1px solid $pinkish-grey;
+      p, span{
+        color:$warm-grey;
+        font-size: rem(16);
+        font-family: Regular;
+      }
+ 
+  }
+  .select-wrapper{
+    width: 100%;
+    max-width: 596px;
+ margin-top:2rem;
+  }
+    .vertical-card {
+      font-family:Regular;
+      .cancel {
+        cursor: pointer;
+        span {
+          color: $turquoise-blue;
+          font-family: Reular;
+          font-size: rem(15);
+          margin-left: rem($spacing-xxs);
+          &:hover{
+            opacity:0.8;
+          }
+        }
+        margin-bottom: rem($spacing-xs);
+        padding-bottom: rem($spacing-xs);
+        border-bottom: 1px solid $pinkish-grey;
+      }
+      width: 200px;
+  
+      p {
+        color: $warm-grey;
+        font-size: rem(15);
+      }
+      img {
+        width: 194.8px;
+        height: 129.8px;
+        object-fit: contain;
+      }
+      svg {
+        width: 19px;
+        height: 19px;
+      }
+      span {
+        color: $greyish-brown;
+        font-size: rem(15);
+        font-family: Regular;
+      }
+    }
+  }

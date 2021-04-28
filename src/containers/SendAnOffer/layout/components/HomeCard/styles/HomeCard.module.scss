@@ -1,0 +1,40 @@
+@import '../../../../../../globalStyles/index.scss';
+
+.vertical-card {
+    font-family:Regular;
+    .cancel {
+      cursor: pointer;
+      span {
+        color: $turquoise-blue;
+        font-family: Regular;
+        font-size: rem(15);
+        margin-left: rem($spacing-xxs);
+        &:hover{
+          opacity:0.8;
+        }
+      }
+      margin-bottom: rem($spacing-xs);
+      padding-bottom: rem($spacing-xs);
+      border-bottom: 1px solid $pinkish-grey;
+    }
+    width: 200px;
+
+    p {
+      color: $warm-grey;
+      font-size: rem(15);
+    }
+    img {
+      width: 194.8px;
+      height: 129.8px;
+      object-fit: contain;
+    }
+    svg {
+      width: 19px;
+      height: 19px;
+    }
+    span {
+      color: $greyish-brown;
+      font-size: rem(15);
+      font-family: Regular;
+    }
+  }

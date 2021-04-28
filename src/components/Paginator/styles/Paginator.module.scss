@@ -1,0 +1,61 @@
+@import "../../../globalStyles/index.scss";
+.pagination-title {
+  font-size: rem(15);
+  color: $pinkish-grey;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: Regular;
+}
+.custom-paginator {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: Regular;
+  li {
+    margin: 0 0.5rem;
+    @media (max-width: 400px) {
+      margin: 0 0.3rem;
+    }
+    a {
+      position: relative;
+      display: block;
+      padding: 0.5rem 0.75rem;
+      margin-left: -1px;
+      line-height: 1.25;
+      color: $greyish;
+      background-color: #fff;
+      border: 1px solid $greyish;
+      border-radius: 5px;
+      &:hover {
+        border: 1px solid $turquoise-blue;
+        color: $turquoise-blue;
+        background-color: #fff;
+      }
+      &:active {
+        border: 1px solid $turquoise-blue;
+        box-shadow: none;
+      }
+      &:focus {
+        border: 1px solid $turquoise-blue;
+        box-shadow: none;
+      }
+    }
+  }
+  .active {
+    a {
+      border: 1px solid $turquoise-blue;
+      color: $turquoise-blue;
+      background-color: #fff;
+    }
+  }
+  .back {
+    border-right: 2px solid$greyish;
+    padding: 0.3rem 0.7rem 0.3rem 0.3rem;
+  }
+  .next {
+    border-left: 2px solid $greyish;
+    padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+  }
+}

@@ -1,0 +1,122 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.NewOffer .title {
+  font-family: Regular;
+  font-size: 1.0625rem;
+  color: #00bbd8;
+  padding-top: 0.5rem;
+  margin-left: 0.25rem;
+}
+
+.NewOffer .main {
+  margin-top: 2.5rem;
+}
+
+.NewOffer .graf-title {
+  color: #7b7b7b;
+  font-size: 0.9375rem;
+  font-family: Regular;
+}
+
+.NewOffer .graf {
+  width: 100%;
+  max-width: 596px;
+  height: 237px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+}
+
+.NewOffer .content {
+  margin-top: 3.5rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  max-width: 596px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.NewOffer .content p, .NewOffer .content span {
+  color: #7b7b7b;
+  font-size: 1rem;
+  font-family: Regular;
+}
+
+.NewOffer .select-wrapper {
+  width: 100%;
+  max-width: 596px;
+  margin-top: 2rem;
+}
+
+.NewOffer .vertical-card {
+  font-family: Regular;
+  width: 200px;
+}
+
+.NewOffer .vertical-card .cancel {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.NewOffer .vertical-card .cancel span {
+  color: #00bbd8;
+  font-family: Reular;
+  font-size: 0.9375rem;
+  margin-left: 0.5rem;
+}
+
+.NewOffer .vertical-card .cancel span:hover {
+  opacity: 0.8;
+}
+
+.NewOffer .vertical-card p {
+  color: #7b7b7b;
+  font-size: 0.9375rem;
+}
+
+.NewOffer .vertical-card img {
+  width: 194.8px;
+  height: 129.8px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.NewOffer .vertical-card svg {
+  width: 19px;
+  height: 19px;
+}
+
+.NewOffer .vertical-card span {
+  color: #595959;
+  font-size: 0.9375rem;
+  font-family: Regular;
+}
+/*# sourceMappingURL=NewOffer.module.css.map */

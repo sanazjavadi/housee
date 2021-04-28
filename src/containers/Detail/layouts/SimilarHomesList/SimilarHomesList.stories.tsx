@@ -1,0 +1,20 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import React from 'react';
+import { Meta, Story } from '@storybook/react/types-6-0';
+import { SimilarHomesList } from './index';
+
+import { ISimilarHomesList } from './SimilarHomesList';
+
+// eslint-disable-next-line arrow-parens
+const Template: Story<ISimilarHomesList.IProps> = (args) => <SimilarHomesList {...args} />;
+
+export const SimilarHomesListStory = Template.bind({});
+
+export default {
+  title: 'Components/SimilarHomesList',
+  component: SimilarHomesList,
+} as Meta;
+
+SimilarHomesListStory.args = {
+  /* the args you need here will depend on your component */
+};

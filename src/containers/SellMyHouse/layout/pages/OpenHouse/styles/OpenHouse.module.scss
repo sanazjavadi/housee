@@ -1,0 +1,150 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.open-house-section {
+    .title {
+        font-size: rem(18);
+        font-family: SemiBoldFont;
+        color: $greyish-brown;
+    }
+
+    .calender {
+        .calender-title {
+            font-size: rem(15);
+            font-family: Regular;
+            color: $greyish-brown;
+        }
+        .calender-left {
+            width: 70%;
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+            .calender-container {
+                width: 100%;
+          
+                border-radius: 8px;
+               
+            }
+        }
+        .time {
+            width: 25%;
+            @media (max-width: 575px) {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        .start-time,
+        .end-time {
+            cursor: pointer;
+            p {
+                margin: 0;
+                font-size: rem(15);
+                font-family: Regular;
+                color: $greyish-brown;
+            }
+
+            .time-container {
+                width: 123px;
+                height: 101px;
+                border-radius: 5px;
+                border: 1px solid $pinkish-grey;
+
+                p {
+                    font-size: rem(17);
+                    font-family: SemiBoldFont;
+                    color: $greyish-brown;
+                    cursor: pointer;
+                }
+
+                span {
+                    text-align: center;
+                    width: 50%;
+                    border-top: 1px solid $pinkish-grey;
+                    display: grid;
+                    align-items: center;
+                    font-size: rem(13);
+                    font-family: SemiBoldFont;
+                    color: $greyish;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $turquoise-blue;
+                        color: white;
+                    }
+                    &:first-child {
+                        border-right: 1px solid $pinkish-grey;
+                    }
+                }
+                .selected{
+                    background-color: $turquoise-blue;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .time-desc {
+        width: 100%;
+        .title {
+            color: $warm-grey;
+            font-size: rem(17);
+            font-family: Regular;
+            text-align: center;
+        }
+
+        .chat-calender {
+            border-top: 1px solid $pinkish-grey;
+            border-bottom: 1px solid $pinkish-grey;
+            padding: rem($spacing-s) 0;
+
+            .end-time-review,
+            .start-time-review {
+                color: $greyish-brown-two;
+                font-size: rem(14);
+                font-family: Regular;
+                text-align: center;
+                @media (max-width: 428px) {
+                    font-size: rem(10);
+                }
+                .radio-span {
+                    label {
+                        font-size: rem(14) !important;
+                        @media (max-width: 428px) {
+                            font-size: rem(10) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .end-time-review {
+            border-left: 1px solid $pinkish-grey;
+            padding-left: rem($spacing-s);
+        }
+        .start-time-review {
+            padding-right: rem($spacing-s);
+        }
+    }
+
+    .nextbtn {
+        float: right;
+        width: 100%;
+        margin-top: rem($spacing-xxl-2) * 2.3;
+        @media (max-width: 991px) {
+            margin: rem($spacing-l) 0;
+        }
+        
+        .cancel {
+            svg {
+                width: 22px;
+                height: 22px;
+            }
+            span {
+                cursor: pointer;
+                font-size: rem(15);
+                color: $turquoise-blue;
+                font-family: Regular;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.071" height="30.898" viewBox="0 0 41.071 30.898">
+  <g id="Bed_icon" data-name="Bed icon" transform="translate(0.5 0.5)">
+    <path id="Path" d="M34.5,0H6.025C2.855,0,0,2.264,0,5.345v8.033c0,.37.593.833.974.833H39.547c.381,0,.523-.463.523-.833V5.345A5.328,5.328,0,0,0,34.5,0Z" transform="translate(0 12.55)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-2" data-name="Path" d="M40.071.669A.679.679,0,0,0,39.382,0H.689A.679.679,0,0,0,0,.669V6.9a.679.679,0,0,0,.689.669H39.382a.679.679,0,0,0,.689-.669Z" transform="translate(0 19.194)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-3" data-name="Path" d="M33.044,10.52V.49c0-.37-.168-.49-.549-.49H.81C.429,0,0,.121,0,.49V10.52" transform="translate(3.608 0)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-4" data-name="Path" d="M.054,0V6.644" transform="translate(-0.054 23.254)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-5" data-name="Path" d="M.054,0V6.644" transform="translate(40.017 23.254)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-6" data-name="Path" d="M7.68,3.989A19.228,19.228,0,0,1,8.046.584.566.566,0,0,0,7.5.022,19.875,19.875,0,0,1,4.114.363,22.207,22.207,0,0,1,.549,0,.538.538,0,0,0,0,.529,18.533,18.533,0,0,1,.366,3.991" transform="translate(21.858 6.513)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-7" data-name="Path" d="M7.68,3.989A19.237,19.237,0,0,1,8.045.584.566.566,0,0,0,7.5.022,19.878,19.878,0,0,1,4.114.363,22.207,22.207,0,0,1,.549,0,.538.538,0,0,0,0,.529,18.551,18.551,0,0,1,.366,3.991" transform="translate(10.617 6.513)" fill="none" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

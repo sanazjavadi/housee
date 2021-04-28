@@ -1,0 +1,150 @@
+@import '../../../../globalStyles/index.scss';
+
+.warpperinput {
+  margin-bottom: rem($spacing-xxs);
+  .title {
+    color: $greyish-brown;
+    font-size: rem(20);
+    font-family: SemiBoldFont;
+    margin: rem($spacing-xxs) 0 rem($spacing-xs) 0;
+  }
+  div {
+    input {
+      height: 48px;
+    }
+  }
+}
+
+.filters {
+  span {
+    color: $purpley-grey;
+    font-size: rem(16);
+    font-family: Regular;
+    cursor: pointer;
+    &:hover {
+      color: $turquoise-blue;
+    }
+    @media (max-width: 768px) {
+      font-size: rem(13);
+    }
+    @media (max-width: 576px) {
+      font-size: rem(15);
+    }
+  }
+  &:nth-child(2) {
+    border-left: 1px solid $like-white;
+    border-right: 1px solid $like-white;
+    padding-left: rem($spacing-xxl);
+    @media (max-width: 768px) {
+      padding-left: rem($spacing-s);
+    }
+    @media (max-width: 576px) {
+      border: none;
+      padding-left: 15px;
+    }
+  }
+  &:last-child {
+    padding-left: rem($spacing-xxl);
+    @media (max-width: 768px) {
+      padding-left: rem($spacing-s);
+    }
+    @media (max-width: 576px) {
+      border: none;
+      padding-left: 15px;
+    }
+  }
+  svg {
+    @media (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 576px) {
+      width: 45px;
+      height: 45px;
+    }
+  
+    &:hover {
+      fill: $turquoise-blue !important;
+    }
+  }
+}
+.add-more-item {
+  span {
+    color: $purpley-grey;
+    font-size: rem(16);
+    font-family: Regular;
+    cursor: pointer;
+    &:hover {
+      color: $turquoise-blue;
+    }
+  }
+  svg {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    &:hover {
+      fill: $turquoise-blue;
+      transform: scale(1.2);
+    }
+    @media (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 576px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+ 
+}
+.selected {
+  span{
+      color:$turquoise-blue;
+  }
+  svg{
+    filter : invert(0) sepia(1) saturate(5) hue-rotate(190deg)
+  }
+}
+.utility {
+  span {
+    color: $greyish-brown;
+    font-family: SemiBoldFont;
+    font-size: rem(18);
+    margin-bottom: rem($spacing-xxs);
+  }
+  .inputSpan {
+    @media (max-width: 450px) {
+      width: 50%;
+      margin-top: rem($spacing-s);
+    }
+  }
+  label {
+    color: $pinkish-grey;
+    font-family: Regular;
+    font-size: rem(16) !important;
+    margin-left: rem($spacing-xxs) !important;
+  }
+}
+.nextbtn {
+  float: right;
+  width: 90%;
+  @media (max-width: 991px) {
+    margin: rem($spacing-l) 0;
+  }
+  @media(max-width:770px){
+    width: 100%;
+  }
+  .cancel {
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+    span {
+      cursor: pointer;
+      font-size: rem(15);
+      color: $turquoise-blue;
+      font-family: Regular;
+    }
+  }
+}

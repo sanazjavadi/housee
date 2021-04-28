@@ -1,0 +1,80 @@
+@import '../../../globalStyles/index.scss';
+
+
+.vertical-product-card{
+    width: 259.7px;
+    height: 580.3px;
+    border-radius: 5px;
+    border: solid 1px $pinkish-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Regular;
+    img{
+        width: 100%;
+    }
+    .status{
+        width: 100%;
+        padding:0.5rem 0;
+        position: relative;
+        background-color: #efefef;
+        text-align: center;
+        font-size: 14px;
+        top:-7px;
+        font-family: Regular;
+        .icon{
+            position: absolute;
+            width: 25px;
+            height:25px;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top:-15px;
+            left:30px;
+            border-width: 1px;
+            svg{
+               width: 15px;
+               height: 15px;
+            }
+        }
+    }
+    .details{
+        font-family: Regular;
+        display: flex;
+        flex-direction: column;
+        color:$greyish-brown;
+        font-size:14px;
+        border-bottom:1px solid $pinkish-grey;
+        padding:1rem 2rem;
+      
+        div{
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            font-family: Regular;
+            svg{
+                margin-right:1rem;
+                width: 18px;
+                height: 18px;
+            }
+        }
+      
+    }
+    .price-offer{
+        text-align:center;
+        color:$greyish-brown;
+        font-size:14px;
+        border-bottom:1px solid $pinkish-grey;
+        padding:1rem;
+        font-family: Regular;
+        span{
+            padding:0 0.5rem;
+        }
+      
+
+    }
+  
+}

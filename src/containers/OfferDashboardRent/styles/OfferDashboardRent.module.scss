@@ -1,0 +1,9 @@
+@import './../../../globalStyles/index';
+.title{
+    font-size:rem(17);
+    color:$turquoise-blue;
+    font-family: regular;
+    margin:0;
+    margin-top:0.2rem;
+    margin-left:rem($spacing-xxs);
+}

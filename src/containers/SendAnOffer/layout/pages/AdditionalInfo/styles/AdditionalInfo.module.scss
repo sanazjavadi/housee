@@ -1,0 +1,34 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.NewOffer {
+    .title {
+        font-family: Regular;
+        font-size: rem(17);
+        color: $turquoise-blue;
+        padding-top: rem($spacing-xxs);
+        margin-left: rem($spacing-xxs-1);
+    }
+    .employment {
+        color: $greyish-brown;
+        font-size: rem(17);
+        font-family: SemiBoldFont;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            background-color: #c3edf3;
+            z-index: -1;
+            left: -11px;
+            bottom: -3px;
+        }
+    }
+    .select-wrapper {
+        width: 100%;
+        max-width: 596px;
+        margin-top: 2rem;
+    }
+    
+}

@@ -1,0 +1,33 @@
+@import '../../../globalStyles/index.scss';
+
+
+.notif{
+   position: fixed;
+   top:$header-heigth; 
+    width: 100vw;
+    left: 0;
+    height: 52px;
+    font-family: Regular;
+    display: flex;
+    align-items: center;
+    div{
+        margin-left: rem($spacing-l);
+        svg{
+            fill:#fff;
+            margin-right:rem($spacing-xxs);
+        }
+    }
+    @media(max-width:991px){
+        top:$header-mobile-height; 
+    }
+}
+.notif-err{
+    @extend .notif;
+    background-color: $orange;
+    color:white;
+}
+.notif-success{
+    @extend .notif;
+    background-color: $green;
+    color:white;
+}

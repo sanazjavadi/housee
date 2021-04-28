@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Group_37_Copy_3" data-name="Group 37 Copy 3" transform="translate(0.5 0.5)">
+    <g id="Group_37_Copy" data-name="Group 37 Copy">
+      <ellipse id="Oval-Copy-33_Copy_16" data-name="Oval-Copy-33 Copy 16" cx="16" cy="16" rx="16" ry="16" fill="#fff" stroke="#908f91" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_57_Copy_2" data-name="Path 57 Copy 2" d="M-1.071,6.857A16.785,16.785,0,0,0-5.864,2.824,24.715,24.715,0,0,0-12.5,0" transform="translate(12.5 16.457)" fill="none" stroke="#908f91" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_57_Copy_4" data-name="Path 57 Copy 4" d="M-1.457,8.686S-2.973,5.871-7.674,3.309A27.062,27.062,0,0,0-17,0" transform="translate(17.914 10.057)" fill="none" stroke="#908f91" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_57_Copy" data-name="Path 57 Copy" d="M0,15.543S8.314.555,24.686,0" transform="translate(7.314 13.714)" fill="none" stroke="#908f91" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_36" data-name="Group 36" transform="translate(19.2 6.4)">
+        <g id="Group_33" data-name="Group 33">
+          <path id="_Path_2" d="M.611,0V4.343" transform="translate(4.417 13.029)" fill="none" stroke="#908f91" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="_Path_6" d="M4.524,14.114C1.959,13.891.008,12.064,0,9.881A15.735,15.735,0,0,1,1.577,3.134C2.607,1.143,3.833,0,5.029,0S7.471,1.143,8.481,3.142a15.735,15.735,0,0,1,1.577,6.739c-.006,2.178-2.14,4-4.7,4.233Z" fill="#fff" stroke="#908f91" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_36_Copy" data-name="Group 36 Copy" transform="translate(13.257 10.743)">
+        <g id="Group_33-2" data-name="Group 33" transform="translate(0 0)">
+          <path id="_Path_2-2" data-name="_Path_2" d="M.5,0V4.114" transform="translate(-0.5)" fill="none" stroke="#908f91" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+      <circle id="Oval" cx="4.114" cy="4.114" r="4.114" transform="translate(9.143 4.571)" fill="none" stroke="#908f91" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

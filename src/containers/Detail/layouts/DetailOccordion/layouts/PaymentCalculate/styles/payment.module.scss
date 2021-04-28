@@ -1,0 +1,216 @@
+@import '../../../../../../../globalStyles/index.scss';
+
+.payment-calculate{
+    padding-top:rem($spacing-xs);
+    border-bottom: 1px solid $pinkish-grey;
+    .title{
+        color:#6e6e6e;
+        font-size: rem(17);
+        font-family: Regular;
+    }
+    .input-number{
+        margin-left:rem($spacing-m);
+    }
+
+    .left-custom-tabel , .right-custom-tabel {
+        font-family: Regular;
+        margin-top:rem($spacing-xl);
+        text-align: center;
+        color:#707070;
+      
+       
+     
+        .table-title{
+            width: 80%;
+            text-align: center;
+            color:#707070;
+            font-size: rem(16);
+            font-family: Regular;
+            @media(max-width:846px){
+                font-size: rem(15);
+            }
+          
+        }
+        .table-price{
+            border:3px solid #f3f3f3;
+            font-size: rem(20);
+            @media(max-width:846px){
+                font-size: rem(18);
+            }
+        }
+        .number{
+            width: 80%;
+          
+        }
+        .percantage{
+            width: 135px;
+            border-left:3px solid  #f3f3f3;
+        }
+        .slidertd{
+            border:3px solid #f3f3f3;
+            border-top:none;
+            border-bottom: none;
+            z-index: 3;
+        }
+
+        .left-tabel{
+            font-size: rem(16);
+            font-family: Regular;
+            color:#707070;
+            border:3px solid #f3f3f3;
+            
+            border-top:none;
+            @media(max-width:846px){
+                font-size: rem(15);
+            }
+        
+            .titleTable{
+                padding:em($spacing-s,16) em($spacing-xxs,16);
+                @media(max-width:846px){
+                    padding:em($spacing-xs,16) em($spacing-xxs,16);
+                }
+                @media(max-width:671px){
+                    padding:em($spacing-xxs-1,16) em($spacing-xxs-1,16);
+                }
+              
+            }
+           
+            .price{
+                border-left:3px solid  #f3f3f3;
+                border-bottom:3px solid #f3f3f3;
+                text-align: center;
+                min-width: 135px;
+                padding:rem($spacing-s)  0;
+                @media(max-width:846px){
+                    padding:rem($spacing-xs)  0;
+                    width: 110px;
+                }
+                @media(max-width:671px){
+                    padding:rem($spacing-xxs-1)  0;
+                    width: 50px;
+                }
+               
+            }
+            div{
+                &:last-child{
+                    .price{
+                        border-bottom: none;
+                    }
+                  
+                }
+            }
+          
+        }
+    }
+
+
+    .fairprice{
+        display: inline-block;
+    right: -58px;
+    top:50%;
+        position: absolute;
+        color: #c3edf3;
+        font-size: rem(14);
+        font-family: Regular;
+        .icon{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #d1f2f7;
+            border-radius: 100%;
+            right:60px;
+            
+        }
+       
+    }
+    .money-svg{
+        position: absolute;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+       
+        left: -2px;
+        top:50%;
+    }
+
+    .total{
+        border-left:1px solid #c3edf3;
+        border-right: 1px solid #c3edf3;
+        font-family: SemiBoldFont;
+        color:#6e6e6e;
+        font-size: rem(17);
+        margin-top:rem($spacing-xs);
+        @media(max-width:846px){
+            font-size: rem(16);
+        }
+        @media(max-width:575px){
+            font-size: rem(13);
+        }
+        div{
+            margin-top:rem($spacing-xs);
+        }
+    }
+}
+
+
+
+
+
+.slider {
+    width: 100%;
+    height: 10px;
+    max-width: 580px;
+    -webkit-appearance: none;
+   
+    margin-top: em($spacing-xxl-2,18);
+    background-color: $pinkish-grey;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    background: linear-gradient(
+      to right,
+      rgb(0, 187, 216) 0%,
+      rgb(0, 187, 216) 50%,
+      rgb(255, 255, 255) 50%,
+      rgb(199, 199, 199) 0%
+    );
+  @media(max-width: 671px){
+    margin-top: em($spacing-xl,18);
+  }
+  }
+  .slider:focus {
+    outline: none;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 38px;
+    margin: -10px 0;
+    width: 38px;
+    cursor: pointer;
+    border: 6px solid $turquoise-blue;
+    background: white;
+    border-radius: 50%;
+  }
+  .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    margin: -10px 0;
+    width: 20px;
+    cursor: pointer;
+    border: none;
+    background: $turquoise-blue;
+    border-radius: 50%;
+  }
+  .slider::range-progress {
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+    background-color: $turquoise-blue;
+    border: 2px solid $turquoise-blue;
+  }
+  .slider::-ms-fill-lower {
+    background: $turquoise-blue;
+    border-radius: 10px;
+  }
+  

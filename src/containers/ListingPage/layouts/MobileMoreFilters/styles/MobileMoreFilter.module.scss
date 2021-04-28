@@ -1,0 +1,30 @@
+@import '../../../../../globalStyles/index.scss';
+
+.mobile-more-filters{
+position: fixed;
+background-color: #fff;
+height:calc(100vh - 260px);
+width: 100vw;
+bottom:0;
+z-index: $mobile-more-filters-z-index;
+
+.leftColumn{
+    border-right:2px solid #f2f2f2;
+}
+.morefilter{
+    font-size: rem(11);
+    font-family: Regular;
+    color:$purpley-grey;
+    margin-top: rem($spacing-s);
+   cursor: pointer; 
+    svg{
+        width: 34px;
+        height: 34px;
+    }
+}
+.more-filter-btn{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+}

@@ -1,0 +1,58 @@
+@import '../../../../../globalStyles/index.scss';
+
+.description-section {
+    padding-top: rem($spacing-s);
+    font-family: Regular;
+    align-items: center;
+  .feature-left {   
+    div{
+      span{
+        font-size: rem(19);
+        color: $greyish-brown;
+        @media(max-width:823px){
+          font-size: rem(17);
+         }
+         @media(max-width:498px){
+          font-size: rem(11);
+         }
+      }
+      .svgIcon{
+        @media(max-width:498px){
+          width: 25px;
+          height: 25px;
+         }
+         @media(max-width:369px){
+          width: 20px;
+          height: 20px;
+         }
+      }
+      margin-right:em($spacing-l, 19);
+    }
+
+ 
+  }
+  .feature-right {
+    font-size: rem(15);
+    color: $warm-grey;
+    display: flex;
+    justify-content: flex-end;
+   align-items:center;
+
+   @media(max-width:823px){
+    font-size: rem(13);
+   }
+  }
+  .description {
+    text-align: left;
+    font-size: rem(15);
+    font-family: semiLightFont;
+    font-weight: 300;
+    color: #2a2a2a;
+    line-height: 1.67;
+    margin: rem($spacing-m) 0;
+    @media(max-width:400px){
+      font-size: rem(12);
+      margin: rem($spacing-s) 0;
+    }
+  }
+}

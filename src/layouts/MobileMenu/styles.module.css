@@ -1,0 +1,202 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.hamburgerMenu {
+  background-color: white;
+  min-height: 100vh;
+  width: 80vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1070;
+}
+
+.hamburgerMenu header {
+  border-bottom: 1px solid #908f91;
+}
+
+.hamburgerMenu header .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.hamburgerMenu header .profile .profile-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburgerMenu header .profile .profile-img img {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.hamburgerMenu header .profile .profile-name {
+  font-size: 0.8125rem;
+  font-family: Regular;
+  color: #908f91;
+}
+
+.hamburgerMenu header .profile .profile-name:hover {
+  opacity: 0.8;
+}
+
+.hamburgerMenu header .profile .profile-name svg {
+  width: 10px;
+  height: 10px;
+  z-index: 22;
+}
+
+.hamburgerMenu .dashboard-dropdown {
+  border-bottom: 1px solid #908f91;
+}
+
+.hamburgerMenu .dashboard-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.hamburgerMenu .dashboard-dropdown ul li {
+  font-size: 1rem;
+  font-family: Regular;
+  width: 100%;
+  color: #7b7b7b;
+  padding: 0.7rem 0;
+  cursor: pointer;
+}
+
+.hamburgerMenu .dashboard-dropdown ul li span {
+  margin: 1rem;
+}
+
+.hamburgerMenu .dashboard-dropdown ul li:hover {
+  background-color: #f7f7f7;
+  color: #00bbd8;
+}
+
+.hamburgerMenu .hamburger-links .sub-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 2.5rem;
+  padding: 0;
+  -webkit-transition: all 0.5 linear;
+  transition: all 0.5 linear;
+}
+
+.hamburgerMenu .hamburger-links .sub-list span {
+  margin-left: 1.5rem;
+}
+
+.hamburgerMenu .hamburger-links .sub-list svg {
+  margin-right: 2.5rem;
+}
+
+.hamburgerMenu .hamburger-links .sub-list li {
+  font-size: 1rem;
+  font-family: Regular;
+  color: #595959;
+  line-height: 1.19;
+  text-align: left;
+  padding: 1em 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.hamburgerMenu .hamburger-links .sub-list li:hover {
+  opacity: 0.8;
+}
+
+.hamburgerMenu .hamburger-links .sub-list li svg {
+  width: 15px;
+  height: 15px;
+}
+
+.hamburgerMenu .hamburger-links .nested-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.5 linear;
+  transition: all 0.5 linear;
+}
+
+.hamburgerMenu .hamburger-links .nested-list li {
+  width: 100%;
+  font-size: 0.9375rem;
+  text-align: center;
+  color: #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: SemiBoldFont;
+  margin: 1.6em 0;
+}
+
+.hamburgerMenu .hamburger-links .nested-list li:hover {
+  background-color: #f7f7f7;
+  color: #00bbd8;
+}
+
+.close-btn svg {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.module.css.map */

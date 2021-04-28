@@ -1,0 +1,97 @@
+@import "../../../globalStyles/index.scss";
+
+.calender {
+    width: 100%;
+    max-width: 425px;
+    position: relative;
+    &::before {
+        position: absolute;
+        width: 3.5px;
+        height: 16.6px;
+        content: "";
+        background-color: $warm-grey;
+        left: 0px;
+    }
+    &::after {
+        position: absolute;
+        width: 3.5px;
+        height: 16.6px;
+        content: "";
+        background-color: $warm-grey;
+        right: 0;
+    }
+
+    .next , .back{
+        position: absolute;
+        cursor: pointer;
+    }
+    .next{
+        right:-25px;
+    }
+    .back{
+        left:-25px;
+    }
+}
+.date {
+    // width: 20%;
+    min-width: 75px;
+    border: 1px solid $pinkish-grey;
+    min-height: 169px;
+    border-radius: 5px;
+    @media(max-width: 471px){
+  margin-left: rem($spacing-xxs);
+    }
+  
+    transition: all 0.3s linear;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid $turquoise-blue;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+    .month {
+        color: $warm-grey;
+        font-family: regular;
+        font-size: rem(14);
+        @media(max-width: 471px){
+            font-size: rem(13);
+              }
+    }
+    .day {
+        color: $greyish-brown;
+        font-family: SemiBoldFont;
+        font-size: rem(30);
+        @media(max-width: 471px){
+            font-size: rem(20);
+              }
+    }
+    .week {
+        color: greyish-brown-two;
+        font-size: rem(14);
+        font-family: Regular;
+        @media(max-width: 471px){
+            font-size: rem(13);
+              }
+              @media(max-width:375px){
+                font-size: rem(11);
+                  }
+    }
+    .time {
+        color: $warm-grey;
+        font-size: rem(15);
+        font-family: Regular;
+        padding: 0.7rem 0;
+        border-top: 1px solid $pinkish-grey;
+        width: 100%;
+        text-align: center;
+        @media(max-width: 471px){
+            font-size: rem(13);
+              }
+              @media(max-width:375px){
+                font-size: rem(11);
+                  }
+    }
+    &.active{
+        border: 1px solid $turquoise-blue;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+}

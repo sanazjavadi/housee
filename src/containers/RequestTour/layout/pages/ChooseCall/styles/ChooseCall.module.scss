@@ -1,0 +1,74 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.ChooseCall {
+  margin-top:50px;
+  .title {
+    font-family: Regular;
+    font-size: rem(17);
+    color: $turquoise-blue;
+    padding-top: rem($spacing-xxs);
+    margin-left: rem($spacing-xxs-1);
+  }
+  .choose-title {
+    color: $greyish-brown;
+    font-size: rem(18);
+    font-family: SemiBoldFont;
+    margin-top: rem($spacing-xxl-4);
+    @media (max-width: 500px) {
+      font-size: rem(16);
+    }
+  }
+  .radiobutton {
+    label {
+      font-size: rem(18);
+      @media (max-width: 500px) {
+        font-size: rem(15);
+      }
+    }
+
+    svg {
+      width: 46px;
+      height: 46px;
+      margin-left: rem($spacing-xxs);
+    }
+  }
+
+  .vertical-card {
+    font-family:Regular;
+    .cancel {
+      cursor: pointer;
+      span {
+        color: $turquoise-blue;
+        font-family: Regular;
+        font-size: rem(15);
+        margin-left: rem($spacing-xxs);
+        &:hover{
+          opacity:0.8;
+        }
+      }
+      margin-bottom: rem($spacing-xs);
+      padding-bottom: rem($spacing-xs);
+      border-bottom: 1px solid $pinkish-grey;
+    }
+    width: 200px;
+
+    p {
+      color: $warm-grey;
+      font-size: rem(15);
+    }
+    img {
+      width: 194.8px;
+      height: 129.8px;
+      object-fit: contain;
+    }
+    svg {
+      width: 19px;
+      height: 19px;
+    }
+    span {
+      color: $greyish-brown;
+      font-size: rem(15);
+      font-family: Regular;
+    }
+  }
+}

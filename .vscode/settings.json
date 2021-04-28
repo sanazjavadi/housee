@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+    // "source.fixAll.tslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "compile-hero.disable-compile-files-on-did-save-code": false
+}

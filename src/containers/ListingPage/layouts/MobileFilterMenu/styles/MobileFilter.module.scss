@@ -1,0 +1,117 @@
+@import "../../../../../globalStyles/index.scss";
+
+.mobile-filter {
+  height: calc(100vh - 94px);
+  width: 80vw;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: $mobile-filters-z-index;
+  .group-btn {
+    width: 100%;
+    display: flex;
+    .filter-btn {
+      width: 50%;
+    }
+  }
+  .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    .option-btn {
+      width: 119px;
+    }
+    .select-btn {
+      width: 102px;
+      margin-left: rem($spacing-xs);
+    }
+  }
+
+  .sliderPrice {
+    margin-top: rem($spacing-s);
+    span {
+      font-family: Regular;
+      font-size: rem(13);
+      color: $greyish-brown;
+      margin-left: rem($spacing-s);
+    }
+  }
+  .filters {
+    .morefilter {
+      display: flex;
+      justify-content: space-between;
+      margin:rem($spacing-s) rem($spacing-s) 0 rem($spacing-s);
+      span {
+          font-family: Regular;
+        color: $greyish-brown;
+        font-size: 13px;
+      }
+      .radial-input{
+          width: 60%;
+      }
+    }
+  }
+  .cardbtnn {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  margin-top: rem($spacing-s);
+  background-color: $pinkish-grey;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  background: linear-gradient(
+    to right,
+    rgb(0, 187, 216) 0%,
+    rgb(0, 187, 216) 50%,
+    rgb(146, 79, 79) 50%,
+    rgb(199, 199, 199) 0%
+  );
+  @media (max-width: 576px) {
+    width: 100vw;
+  }
+}
+.slider:focus {
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  margin: -10px 0;
+  width: 30px;
+  cursor: pointer;
+  border: 6px solid $turquoise-blue;
+  background: white;
+  border-radius: 50%;
+}
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  margin: -10px 0;
+  width: 20px;
+  cursor: pointer;
+  border: none;
+  background: $turquoise-blue;
+  border-radius: 50%;
+}
+.slider::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: $turquoise-blue;
+  border: 2px solid $turquoise-blue;
+}
+.slider::-ms-fill-lower {
+  background: $turquoise-blue;
+  border-radius: 10px;
+}

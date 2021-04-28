@@ -1,0 +1,51 @@
+@import '../../../globalStyles/index.scss';
+
+
+
+
+.InputNumber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+        outline:none;
+        background-color: white;
+        border-radius:50%;
+        border:1px solid $warm-grey;
+        width:30px;
+        font-family: Regular;
+        height:30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$warm-grey;
+        svg{
+            fill:$warm-grey;
+            height:20px;
+            width: 25px;
+        }
+        &:hover{
+            border:1px solid $turquoise-blue;
+            svg{
+                fill:$turquoise-blue;
+            }
+        }
+        
+        
+    }
+    .number{
+        color:$turquoise-blue;
+        font-size:rem(17);
+    }
+    //size
+.lg{
+    width: 40px;
+    height:40px;
+    }
+
+    .number-lg{
+        font-size: rem(20);
+    }
+}
+

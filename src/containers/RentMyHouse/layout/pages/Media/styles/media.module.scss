@@ -1,0 +1,130 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.media{
+    .arrow , .camera{
+        cursor: pointer;
+        width: 104px;
+        height: 104px;
+        border-radius: 40px;
+      border:2px solid $pinkish-grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  &:hover{
+   border:2px solid $turquoise-blue;
+   
+    
+  }
+      .svg{
+          width: 60px;
+          height: 60px;
+          &:hover{
+              animation: none;
+          }
+      }
+ 
+    }
+
+    .media-form{
+      margin-top: rem($spacing-l);
+      width: 100%;
+      max-width: 365px;
+  height: 40px;
+  border-radius: 6px ;
+  border:1px solid $turquoise-blue;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  @media(max-width:488px){
+    width: 100%;
+    max-width: max-content;
+  }
+  button{
+    outline: none;
+    white-space: nowrap;
+    border:none;
+    background-color: white;
+    color:$warm-grey;
+    font-size: rem(13);
+    font-family: Regular;
+    text-align: center;
+    word-wrap:normal;
+    &:hover{
+      color:$turquoise-blue;
+    }
+    &:nth-child(1){
+      padding:0 3.2em;
+      position: relative;
+      @media(max-width:488px){
+        padding:0 2.5em;
+      }
+      .minimize{
+        position: absolute;
+        width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border:1px solid $turquoise-blue;
+  font-size: rem(17);
+  color:$turquoise-blue;
+  left: 10px;
+ 
+  svg{
+    fill: $turquoise-blue;
+    width: 10px;
+    transform: translateY(-50%);
+  }
+      }
+    }
+    &:nth-child(2){
+      border-left: 1px solid $turquoise-blue;
+      border-right: 1px solid $turquoise-blue;
+      padding:0 2.5em;
+      @media(max-width:488px){
+        padding:0 1em;
+      }
+    
+    }
+    &:nth-child(3){
+      
+      padding:0 2em;
+    }
+  
+
+  }
+    }
+    .title{
+        color:$greyish-brown;
+        font-size: rem(18);
+        font-family: SemiBoldFont;
+        margin-top: rem($spacing-xxs-1);
+    }
+
+    .wrapper{
+        margin-top: rem($spacing-l);
+    }
+
+    .nextbtn{
+        float: right;
+        width: 100%;
+        margin-top: rem($spacing-l);
+      @media(max-width:991px){
+        margin:rem($spacing-l) 0;
+      }
+        .cancel{
+          svg{
+            width:22px;
+            height:22px;
+          }
+          span{
+            cursor: pointer;
+            font-size: rem(15);
+            color:$turquoise-blue;
+            font-family: Regular;
+          }
+        }
+      }
+}
+
+.fileInput {
+  display: none;
+}

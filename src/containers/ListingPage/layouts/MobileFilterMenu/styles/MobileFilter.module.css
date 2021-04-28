@@ -1,0 +1,171 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.mobile-filter {
+  height: calc(100vh - 94px);
+  width: 80vw;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.mobile-filter .group-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-filter .group-btn .filter-btn {
+  width: 50%;
+}
+
+.mobile-filter .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.mobile-filter .option .option-btn {
+  width: 119px;
+}
+
+.mobile-filter .option .select-btn {
+  width: 102px;
+  margin-left: 1rem;
+}
+
+.mobile-filter .sliderPrice {
+  margin-top: 1.5rem;
+}
+
+.mobile-filter .sliderPrice span {
+  font-family: Regular;
+  font-size: 0.8125rem;
+  color: #595959;
+  margin-left: 1.5rem;
+}
+
+.mobile-filter .filters .morefilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.mobile-filter .filters .morefilter span {
+  font-family: Regular;
+  color: #595959;
+  font-size: 13px;
+}
+
+.mobile-filter .filters .morefilter .radial-input {
+  width: 60%;
+}
+
+.mobile-filter .cardbtnn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  margin-top: 1.5rem;
+  background-color: #c7c7c7;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbd8), color-stop(50%, #00bbd8), color-stop(50%, #924f4f), color-stop(0%, #c7c7c7));
+  background: linear-gradient(to right, #00bbd8 0%, #00bbd8 50%, #924f4f 50%, #c7c7c7 0%);
+}
+
+@media (max-width: 576px) {
+  .slider {
+    width: 100vw;
+  }
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  margin: -10px 0;
+  width: 30px;
+  cursor: pointer;
+  border: 6px solid #00bbd8;
+  background: white;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 20px;
+  margin: -10px 0;
+  width: 20px;
+  cursor: pointer;
+  border: none;
+  background: #00bbd8;
+  border-radius: 50%;
+}
+
+.slider::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: #00bbd8;
+  border: 2px solid #00bbd8;
+}
+
+.slider::-ms-fill-lower {
+  background: #00bbd8;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=MobileFilter.module.css.map */

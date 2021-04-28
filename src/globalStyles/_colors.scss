@@ -1,0 +1,38 @@
+$turquoise-blue: #00bbd8;
+$white: #f7f7f7;
+$like-white:#efefef;
+$duck-egg-blue: #c3edf3;
+$warm-grey: #7b7b7b;
+$dark-gray:#686868;
+$light-gray:#6e6e6e;
+$greyish-brown: #595959;
+$pinkish-grey: #c7c7c7;
+$green-blue: #00b4a2;
+$greyish: #a7a7a7;
+$purpley-grey: #908f91;
+$black: #181818;
+$lightblue: #8bd2ec;
+$greyish-brown-two :#3f3f3f;
+$green:#00b89a;
+$greyish:#a7a7a7;
+$orange:#ee7700;
+//colors that isnot in style guid
+$footer-font-color:#1e1713;
+$button-detail:#d8d8d8;
+$detail-title-price:#707070;
+
+// CONTENT
+$color-text: $warm-grey;
+$color-heading-text: $greyish-brown;
+
+// LINKS
+$color-link-text: #39a275;
+$color-link-text-active: $color-text;
+
+// INPUTS
+$color-input-border: lighten($color-heading-text, 50%);
+
+// BUTTONS
+$color-button-bg: $color-link-text;
+$color-button-disabled-bg: darken(desaturate($color-button-bg, 20%), 10%);
+$color-button-text: white;

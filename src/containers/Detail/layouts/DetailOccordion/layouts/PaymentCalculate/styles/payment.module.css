@@ -1,0 +1,265 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.payment-calculate {
+  padding-top: 1rem;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.payment-calculate .title {
+  color: #6e6e6e;
+  font-size: 1.0625rem;
+  font-family: Regular;
+}
+
+.payment-calculate .input-number {
+  margin-left: 2rem;
+}
+
+.payment-calculate .left-custom-tabel, .payment-calculate .right-custom-tabel {
+  font-family: Regular;
+  margin-top: 3rem;
+  text-align: center;
+  color: #707070;
+}
+
+.payment-calculate .left-custom-tabel .table-title, .payment-calculate .right-custom-tabel .table-title {
+  width: 80%;
+  text-align: center;
+  color: #707070;
+  font-size: 1rem;
+  font-family: Regular;
+}
+
+@media (max-width: 846px) {
+  .payment-calculate .left-custom-tabel .table-title, .payment-calculate .right-custom-tabel .table-title {
+    font-size: 0.9375rem;
+  }
+}
+
+.payment-calculate .left-custom-tabel .table-price, .payment-calculate .right-custom-tabel .table-price {
+  border: 3px solid #f3f3f3;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 846px) {
+  .payment-calculate .left-custom-tabel .table-price, .payment-calculate .right-custom-tabel .table-price {
+    font-size: 1.125rem;
+  }
+}
+
+.payment-calculate .left-custom-tabel .number, .payment-calculate .right-custom-tabel .number {
+  width: 80%;
+}
+
+.payment-calculate .left-custom-tabel .percantage, .payment-calculate .right-custom-tabel .percantage {
+  width: 135px;
+  border-left: 3px solid  #f3f3f3;
+}
+
+.payment-calculate .left-custom-tabel .slidertd, .payment-calculate .right-custom-tabel .slidertd {
+  border: 3px solid #f3f3f3;
+  border-top: none;
+  border-bottom: none;
+  z-index: 3;
+}
+
+.payment-calculate .left-custom-tabel .left-tabel, .payment-calculate .right-custom-tabel .left-tabel {
+  font-size: 1rem;
+  font-family: Regular;
+  color: #707070;
+  border: 3px solid #f3f3f3;
+  border-top: none;
+}
+
+@media (max-width: 846px) {
+  .payment-calculate .left-custom-tabel .left-tabel, .payment-calculate .right-custom-tabel .left-tabel {
+    font-size: 0.9375rem;
+  }
+}
+
+.payment-calculate .left-custom-tabel .left-tabel .titleTable, .payment-calculate .right-custom-tabel .left-tabel .titleTable {
+  padding: 1.5em 0.5em;
+}
+
+@media (max-width: 846px) {
+  .payment-calculate .left-custom-tabel .left-tabel .titleTable, .payment-calculate .right-custom-tabel .left-tabel .titleTable {
+    padding: 1em 0.5em;
+  }
+}
+
+@media (max-width: 671px) {
+  .payment-calculate .left-custom-tabel .left-tabel .titleTable, .payment-calculate .right-custom-tabel .left-tabel .titleTable {
+    padding: 0.25em 0.25em;
+  }
+}
+
+.payment-calculate .left-custom-tabel .left-tabel .price, .payment-calculate .right-custom-tabel .left-tabel .price {
+  border-left: 3px solid  #f3f3f3;
+  border-bottom: 3px solid #f3f3f3;
+  text-align: center;
+  min-width: 135px;
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 846px) {
+  .payment-calculate .left-custom-tabel .left-tabel .price, .payment-calculate .right-custom-tabel .left-tabel .price {
+    padding: 1rem 0;
+    width: 110px;
+  }
+}
+
+@media (max-width: 671px) {
+  .payment-calculate .left-custom-tabel .left-tabel .price, .payment-calculate .right-custom-tabel .left-tabel .price {
+    padding: 0.25rem 0;
+    width: 50px;
+  }
+}
+
+.payment-calculate .left-custom-tabel .left-tabel div:last-child .price, .payment-calculate .right-custom-tabel .left-tabel div:last-child .price {
+  border-bottom: none;
+}
+
+.payment-calculate .fairprice {
+  display: inline-block;
+  right: -58px;
+  top: 50%;
+  position: absolute;
+  color: #c3edf3;
+  font-size: 0.875rem;
+  font-family: Regular;
+}
+
+.payment-calculate .fairprice .icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #d1f2f7;
+  border-radius: 100%;
+  right: 60px;
+}
+
+.payment-calculate .money-svg {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+}
+
+.payment-calculate .money-svg svg {
+  width: 30px;
+  height: 30px;
+}
+
+.payment-calculate .total {
+  border-left: 1px solid #c3edf3;
+  border-right: 1px solid #c3edf3;
+  font-family: SemiBoldFont;
+  color: #6e6e6e;
+  font-size: 1.0625rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 846px) {
+  .payment-calculate .total {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .payment-calculate .total {
+    font-size: 0.8125rem;
+  }
+}
+
+.payment-calculate .total div {
+  margin-top: 1rem;
+}
+
+.slider {
+  width: 100%;
+  height: 10px;
+  max-width: 580px;
+  -webkit-appearance: none;
+  margin-top: 3.55556em;
+  background-color: #c7c7c7;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbd8), color-stop(50%, #00bbd8), color-stop(50%, white), color-stop(0%, #c7c7c7));
+  background: linear-gradient(to right, #00bbd8 0%, #00bbd8 50%, white 50%, #c7c7c7 0%);
+}
+
+@media (max-width: 671px) {
+  .slider {
+    margin-top: 2.66667em;
+  }
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 38px;
+  margin: -10px 0;
+  width: 38px;
+  cursor: pointer;
+  border: 6px solid #00bbd8;
+  background: white;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 20px;
+  margin: -10px 0;
+  width: 20px;
+  cursor: pointer;
+  border: none;
+  background: #00bbd8;
+  border-radius: 50%;
+}
+
+.slider::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: #00bbd8;
+  border: 2px solid #00bbd8;
+}
+
+.slider::-ms-fill-lower {
+  background: #00bbd8;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=payment.module.css.map */

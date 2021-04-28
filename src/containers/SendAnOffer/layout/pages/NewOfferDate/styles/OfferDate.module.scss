@@ -1,0 +1,20 @@
+@import '../../../../../../globalStyles/index.scss';
+
+.title{
+  color:$turquoise-blue;
+  font-size: rem(17);
+  font-family: Regular;
+  margin-left:rem($spacing-xxs-1)
+}
+.calender-title{
+  color:$greyish-brown;
+  font-family: SemiBoldFont;
+  font-size: rem(18);
+}
+
+.radiobutton{
+  label{
+    font-size: rem(15)
+    !important;
+  }
+}

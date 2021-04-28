@@ -1,0 +1,105 @@
+@import '../../../globalStyles/index.scss';
+
+.radioButton{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .label{
+        margin:0;
+        margin-left:rem($spacing-xxs-1);
+        cursor: pointer;
+        font-size: rem(19);      
+        font-family: Regular;
+        color:$greyish-brown;
+    }
+    .labelactive{
+      margin:0;
+        margin-left:rem($spacing-xxs-1);
+        cursor: pointer;
+        font-size: rem(19);      
+        font-family: Regular;
+        color:$turquoise-blue;
+    }
+    input[type="radio"]:not(old) {
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        direction: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 1em;
+        border: 1px solid #707070;
+        cursor: pointer;
+      }
+      
+      input[type="radio"]:not(old):checked {
+        border: 1px solid  $turquoise-blue;
+        background-image: radial-gradient(
+          circle at center,
+         $turquoise-blue,
+         $turquoise-blue 55%,
+         $turquoise-blue 62%,
+         $turquoise-blue 100%
+        );
+        & + svg{
+          g{
+            stroke:$turquoise-blue;
+          }
+          path{
+            stroke:$turquoise-blue;
+          }
+        }
+      }
+      svg{
+        margin-left:1rem;
+     
+     
+    }
+}
+
+.yesNoButton{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    label{
+        margin:0;
+        margin-top:0.5rem;
+        font-size: 15px;
+        color:$greyish;
+        cursor: pointer;
+        font-family: Regular;
+    }
+    input[type="radio"]:not(old) {
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        direction: none;
+        width: 25px;
+        height:25px;
+        border-radius: 1em;
+        border: 5px solid $pinkish-grey;
+        cursor: pointer;
+      }
+      
+      input[type="radio"]:not(old):checked  {
+        border: 5px solid $turquoise-blue;
+     
+        
+      }
+      input[type="radio"]:not(old):checked +label  {
+       color: $turquoise-blue;
+     
+        
+      }
+      
+
+}

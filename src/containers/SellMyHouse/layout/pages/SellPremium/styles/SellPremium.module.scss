@@ -1,0 +1,65 @@
+@import '../../../../../../globalStyles/index.scss';
+
+.title{
+    color:$warm-grey;
+    font-size:rem(17);
+    font-family: Regular;
+}
+
+.price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    min-width: 195.2px;
+    height: 300px;
+    padding:35px 0;
+    border-radius: 5px;
+    border: solid 1px #d6d6d6;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.08);
+    }
+    &.selected{
+        border: 1px solid $turquoise-blue;
+        transform: scale(1.08);
+    }
+    .price-title{
+        color:greyish-brown-two;
+        font-size: rem(20);
+        font-family: Regular;
+        height: 50%;
+        vertical-align:middle;
+    }
+    .price{
+        margin-top:rem($spacing-s);
+        color:$greyish-brown;
+        font-family: SemiBoldFont;
+        span{
+            font-size: rem(25);
+        }
+        small{
+ font-size: rem(13);
+        }
+        strong{
+            font-size: rem(17);
+        }
+    }
+  ul{
+      height: 48%;
+      margin-top:rem($spacing-m);
+      li{
+        color:$greyish-brown;
+        font-size: rem(12);
+        font-family: Regular;
+        padding-top: rem($spacing-s);
+        svg{
+            width: 15px;
+            height: 15px;
+        }
+      }
+  }
+}
+

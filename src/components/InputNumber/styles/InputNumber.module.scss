@@ -1,0 +1,18 @@
+@import '../../../globalStyles/index.scss';
+
+
+.numberInput{
+    height: 36px;
+    width: 100%;
+    border-radius: 3px;
+    font-family: Regular;
+    border:1px solid $pinkish-grey;
+    color:$warm-grey;
+    font-size: rem(15);
+    padding-left: rem($spacing-xxs-1);
+    &:focus{
+        outline: none;
+        border:1px solid $pinkish-grey;
+        box-shadow: none;
+    }
+}

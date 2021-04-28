@@ -1,0 +1,52 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.ChooseDate{
+    margin-top:120px;
+@media(max-width:573px){
+  margin-top:50px;
+}
+  .tour{
+      p{
+          color:$greyish-brown;
+          font-family: SemiBoldFont;
+          font-size: rem(19);
+          @media(max-width: 798px){
+            font-size: rem(16);
+          }
+      }
+  }
+
+  .right{
+      border-left: 1px solid #efefef;
+      padding-left:rem($spacing-m);
+      span{
+          color:$greyish-brown;
+          font-size: rem(17);
+          font-family: Regular;
+          margin-left:rem($spacing-xxs-1);
+          @media(max-width: 798px){
+            font-size: rem(15);
+          }
+      }
+  }
+
+  .radiobtn{
+      svg{
+          width: 35px;
+          height: 35px;
+          margin-left:rem($spacing-xs);
+      }
+  }
+
+  .cancel{
+      font-size:rem(15);
+      font-family: Regular;
+      color:$turquoise-blue;
+      margin-top:rem($spacing-s);
+      cursor: pointer;
+      span{
+        margin-left:rem($spacing-xxs-1)
+      }
+    
+  }
+}

@@ -1,0 +1,28 @@
+.FadeContent {
+  -webkit-animation-name: getFadeContainerKeyFrame;
+          animation-name: getFadeContainerKeyFrame;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes getFadeContainerKeyFrame {
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 0;
+  }
+}
+
+@keyframes getFadeContainerKeyFrame {
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=FadeContent.module.css.map */

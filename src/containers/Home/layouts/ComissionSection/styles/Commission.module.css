@@ -1,0 +1,233 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.sellingDesc .selling-title {
+  font-size: 1.25rem;
+  font-family: SemiBoldFont;
+}
+
+.sellingDesc span {
+  font-size: 1.0625rem;
+  font-family: Regular;
+}
+
+.sellingDesc {
+  background-color: #f7f7f7;
+  padding-top: 2.5rem;
+}
+
+.sellingDesc .selling-title {
+  color: #595959;
+  margin: 0;
+  position: relative;
+  margin-left: 0.4em;
+}
+
+@media (max-width: 768px) {
+  .sellingDesc .selling-title {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .selling-title {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sellingDesc svg {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: -17px;
+    left: 18px;
+  }
+}
+
+.sellingDesc span {
+  color: #707070;
+  display: block;
+}
+
+.sellingDesc .slide-span {
+  margin-left: 3.29412em;
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .slide-span {
+    font-size: 0.875rem;
+    margin-left: 0.57143em;
+    margin-top: 1.14286em;
+  }
+}
+
+.sellingDesc .bottomCommi {
+  line-height: 0;
+}
+
+.sellingDesc .price-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1153px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .sellingDesc .price-range {
+    padding: 0 15px;
+    margin-bottom: 1rem;
+  }
+}
+
+.sellingDesc .price-range span {
+  font-size: 1.5625rem;
+  color: #7b7b7b;
+  min-width: 112px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sellingDesc .price-range span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .price-range span {
+    font-size: 0.875rem;
+  }
+}
+
+.sellingDesc .price-range span:nth-child(2) {
+  font-size: 2.3125rem;
+}
+
+@media (max-width: 768px) {
+  .sellingDesc .price-range span:nth-child(2) {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .price-range span:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+.sellingDesc .selling-price {
+  font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.66667em;
+  margin-left: 1.77778em;
+}
+
+.sellingDesc .selling-price span {
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .selling-price {
+    margin-left: 0;
+  }
+}
+
+.sellingDesc .selling-price span {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .selling-price span {
+    font-size: 0.9375rem;
+    color: #00bbd8;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .sellingDesc .selling-price {
+    font-size: 0.9375rem;
+    color: #00bbd8;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.sellingDesc .selling-price::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #c3edf3;
+  border-radius: 50%;
+  left: 14px;
+}
+
+@media (max-width: 576px) {
+  .sellingDesc .selling-price::before {
+    display: none;
+  }
+}
+
+.slider-wrapper {
+  margin-top: 3.55556em;
+}
+
+@media (max-width: 575px) {
+  .slider-wrapper {
+    margin-top: 2.22222em;
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=Commission.module.css.map */

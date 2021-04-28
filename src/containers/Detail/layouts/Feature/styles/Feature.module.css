@@ -1,0 +1,249 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.feature-section .feature {
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding-top: 2.5em;
+  padding-left: 3em;
+  margin-bottom: 1rem;
+}
+
+.feature-section .feature .title {
+  color: #595959;
+  font-size: 1.125rem;
+  font-family: SemiBoldFont;
+}
+
+.feature-section .feature ul {
+  font-size: 1rem;
+  color: #2a2a2a;
+  margin-top: 1.5em;
+  font-family: Regular;
+}
+
+@media (max-width: 938px) {
+  .feature-section .feature ul {
+    font-size: 0.875rem;
+  }
+}
+
+.feature-section .feature ul li {
+  padding-bottom: 1.5em;
+}
+
+.feature-section .nearby {
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding-top: 2.22222em;
+  padding-left: 1.77778em;
+  padding-right: 1.77778em;
+  padding-bottom: 1.33333em;
+  margin-bottom: 2.5rem;
+}
+
+.feature-section .nearby .title {
+  color: #595959;
+  font-size: 1.125rem;
+  font-family: SemiBoldFont;
+}
+
+.feature-section .nearby .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature-section .nearby .tab a {
+  color: #707070;
+  font-size: 1.0625rem;
+  margin-top: 1.41176em;
+  font-family: SemiBoldFont;
+  padding: 0;
+}
+
+.feature-section .nearby .tab a:focus {
+  border: none;
+  outline: none;
+}
+
+.feature-section .nearby .inner-tab {
+  width: 583px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-section .nearby .nearby-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  max-width: 282px;
+  height: 182px;
+  border-radius: 5px;
+  border: solid 2px #efefef;
+}
+
+@media (max-width: 1200px) {
+  .feature-section .nearby .nearby-tab {
+    width: 48%;
+  }
+}
+
+@media (max-width: 463px) {
+  .feature-section .nearby .nearby-tab {
+    width: 65%;
+    margin: auto;
+    margin-top: 1em;
+  }
+}
+
+.feature-section .nearby .nearby-tab .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+  font-size: 0.8125rem;
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.feature-section .nearby .nearby-tab .top .left {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e6e6e6;
+  border-radius: 100%;
+  color: #595959;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
+}
+
+.feature-section .nearby .nearby-tab .top .right {
+  width: 50px;
+  height: 50px;
+  background-color: #d6d6d6;
+  color: white;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  font-weight: 900;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
+}
+
+.feature-section .nearby .nearby-tab .bottom {
+  color: #595959;
+  font-size: 0.8125rem;
+  font-family: Regular;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .feature-section .nearby .nearby-tab .bottom {
+    font-size: 0.75rem;
+  }
+}
+
+.nearby-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.readmore {
+  color: #00bbd8;
+  font-size: 0.9375rem;
+  font-family: Regular;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.readmore:hover {
+  opacity: 0.7;
+}
+
+.readmore svg {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=Feature.module.css.map */

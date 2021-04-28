@@ -1,0 +1,51 @@
+@import '../../../../../../globalStyles/index.scss';
+
+
+.NewOffer {
+    .title {
+      font-family: Regular;
+      font-size: rem(17);
+      color: $turquoise-blue;
+      padding-top: rem($spacing-xxs);
+      margin-left: rem($spacing-xxs-1);
+    
+    }
+    .main{
+        margin-top: rem($spacing-l);
+    }
+
+  .graf-title{
+      color:$warm-grey;
+      font-size: rem(15);
+      font-family: Regular;
+  }
+
+  .graf{
+    width: 100%;
+    max-width: 596px;
+    height: 237px;
+    border-radius: 5px;
+    border:1px solid $pinkish-grey;
+    overflow: hidden;
+  }
+  
+  .content{
+      margin-top:rem($spacing-xxl);
+      padding-bottom:rem($spacing-s);
+    width: 100%;
+    max-width: 596px;
+      border-bottom: 1px solid $pinkish-grey;
+      p, span{
+        color:$warm-grey;
+        font-size: rem(16);
+        font-family: Regular;
+      }
+ 
+  }
+  .select-wrapper{
+    width: 100%;
+    max-width: 596px;
+ margin-top:2rem;
+  }
+
+  }

@@ -1,0 +1,109 @@
+@import '../../../../globalStyles/index.scss';
+
+
+.input-form{
+  width: 55%;
+  margin-bottom: rem($spacing-s);
+  @media(max-width:991px){
+    width: 75%;
+  }
+  @media(max-width:770px){
+    width: 90%;
+  }
+  label{
+  font-size: rem(15);
+  font-family: Regular;
+  color:$greyish-brown;
+
+  }
+}
+
+
+.select{
+  width: 75%;
+  @media(max-width:991px){
+    width: 75%;
+  }
+  @media(max-width:770px){
+    width: 90%;
+  }
+  label{
+    font-size: rem(15);
+    font-family: Regular;
+    color:$greyish-brown;
+    cursor: pointer;
+    }
+}
+
+.maptitle{
+  span{
+    font-size: rem(17);
+    font-family: Regular;
+    color:$greyish-brown;
+    margin-left: rem($spacing-xxs);
+  }
+  
+
+
+.pin{
+  width: 20px;
+  height: 20px;
+  margin-bottom: rem($spacing-xs);
+  svg{
+    width: 21px;
+    height: 21px;
+  }
+position: inine-block;
+  position: relative;
+  
+}
+
+.pin:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid $warm-grey;
+  position: absolute;
+  left: 0px;
+  bottom: -15px;
+  animation: locate 2s ease-out infinite;
+}
+
+@keyframes locate {
+  from {
+      transform: perspective(30px)  rotateX(70deg) scale(0.7);
+  }
+  to {
+      transform: perspective(40px)  rotateX(70deg) scale(1);
+      opacity: 0.1;
+  }
+}
+}
+
+.nextbtn{
+  float: right;
+  margin-top: 50px;
+  width:70%;
+  @media(max-width:991px){
+    width: 70%;
+  }
+  @media(max-width:770px){
+    width: 100%;
+  }
+
+  .cancel{
+    cursor: pointer;
+    svg{
+      width:22px;
+      height:22px;
+    }
+    span{
+      cursor: pointer;
+      font-size: rem(15);
+      color:$turquoise-blue;
+      font-family: Regular;
+    }
+  }
+}
+

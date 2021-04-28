@@ -1,0 +1,97 @@
+@font-face {
+  font-family: LightFont;
+  src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: semiLightFont;
+  src: local("Segoe UI Semilight"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Regular;
+  src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: local("Segoe UI Bold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SemiBoldFont;
+  src: local("Segoe UI Semibold"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+  font-weight: 700;
+}
+
+.custom-dark-title, .custom-light-title {
+  font-size: 1.0625rem;
+  font-family: Regular;
+}
+
+.custom-dark-title {
+  color: white;
+  text-decoration: none;
+  padding: 0 1.6em;
+  border-left: 1px solid white !important;
+}
+
+.custom-dark-title:hover {
+  text-decoration: none;
+  color: #00bbd8;
+}
+
+.custom-dark-title:active {
+  color: #00bbd8;
+}
+
+@media (max-width: 1200px) {
+  .custom-dark-title {
+    font-size: 1rem;
+    padding: 0 1.06667em;
+  }
+}
+
+.custom-light-title {
+  color: #595959;
+  text-decoration: none;
+  padding: 0 1.6em;
+  border-left: 1px solid #595959 !important;
+}
+
+.custom-light-title:hover {
+  text-decoration: none;
+  color: #00bbd8;
+}
+
+@media (max-width: 1200px) {
+  .custom-light-title {
+    font-size: 1rem;
+    padding: 0 1.06667em;
+  }
+}
+
+.customDrop {
+  display: block;
+  width: 100%;
+  padding: .25rem 1rem;
+  clear: both;
+  font-size: 1rem;
+  color: #7b7b7b;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.customDrop:hover {
+  text-decoration: none;
+  color: #00bbd8;
+}
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,50 @@
+@import '../../../../../../globalStyles/index.scss';
+
+
+.title{
+    color:$greyish-brown;
+    font-size: rem(18);
+    font-family: Regular;
+}
+.doc-row{
+    width: 70%;
+    @media(max-width: 1200px){
+       width: 100%;
+    }
+}
+.document{
+    position: relative;
+    width: 144px;
+  height: 48px;
+  border-radius: 5px;
+  border: solid 1px #e5e5e5;
+  overflow: hidden;
+  @media(max-width: 1200px){
+    margin-top: 1rem;
+}
+  .cancel{
+      position: absolute;
+      top:0.3rem;
+      right:0.3rem;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+  }
+  .doc{
+      width: 21px;
+      height: 30px;
+  }
+  p{
+color:greyish-brown;
+font-size: rem(10);
+font-family: Regular;
+margin:0;
+  }
+}
+.btn{
+    width: 20%;
+    min-width: 190px;
+    @media(max-width: 1200px){
+        margin-top: 1rem;
+    }
+}

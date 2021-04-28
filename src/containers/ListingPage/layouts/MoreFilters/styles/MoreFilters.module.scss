@@ -1,0 +1,66 @@
+@import '../../../../../globalStyles/index.scss';
+
+
+.warpperinput{
+    div{
+        input{
+            height: 48px;
+        }
+    }
+    
+}
+.filters{
+
+    span{
+       color:$purpley-grey;
+       font-size:rem(14);
+       font-family: Regular;
+       cursor: pointer;
+       &:hover{  
+        color:$turquoise-blue;
+ }
+ @media(max-width:768px){
+    font-size:rem(13);
+ }
+    }
+    &:nth-child(2){
+        border-left:1px solid $like-white;
+        border-right:1px solid $like-white;
+      padding-left:rem($spacing-xxl);
+      @media(max-width:768px){
+        padding-left:rem($spacing-s);
+     }
+    }
+    &:last-child{
+        padding-left:rem($spacing-xxl);
+        @media(max-width:768px){
+            padding-left:rem($spacing-s);
+         }
+    }
+    svg{
+      
+            &:hover{
+            
+                fill: $turquoise-blue;
+         }
+       
+      
+    }
+  
+}
+
+
+.selected {
+  span{
+      color:$turquoise-blue;
+  }
+  svg{
+    filter : invert(0) sepia(1) saturate(5) hue-rotate(190deg)
+  }
+}
+
+.label{
+    color:$warm-grey;
+    font-family: Regular;
+    font-size: rem(14);
+}

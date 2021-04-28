@@ -1,0 +1,54 @@
+@import "../../../../../../globalStyles/index.scss";
+
+.title{
+  color:$warm-grey;
+  font-size: rem(20);
+  font-family: SemiBoldFont;
+}
+
+.checkbox{
+  input{
+    cursor: pointer;
+    border-radius: 10px;
+    width:18px;
+    height:18px;
+    border:1px solid $greyish;
+  }
+  label{
+    color:$warm-grey;
+    font-size: rem(14);
+    font-family: Regular;
+  }
+}
+.cancel{
+  color:$turquoise-blue;
+  font-size: rem(15);
+  font-family: regular;
+  cursor: pointer;
+}
+
+//credit styles
+
+.credit {
+  width: 240px;
+  height: 142px;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 $pinkish-grey;
+
+  position: relative;
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+  span {
+    color: $warm-grey;
+    font-size: rem(12);
+    font-family: Regular;
+    padding-left: rem($spacing-s);
+  }
+  .radio {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}

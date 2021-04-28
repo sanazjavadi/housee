@@ -1,0 +1,135 @@
+@import "../../../../../globalStyles/index.scss";
+
+.sellingDesc {
+  background-color: $white;
+  padding-top: rem($spacing-l);
+
+  .selling-title {
+    color: $color-heading-text;
+    @extend %font-heading;   
+    margin: 0;
+    position: relative;
+    margin-left:em($spacing-xxs,20);
+    @media (max-width: 768px) {
+      font-size:rem(15);
+    }
+    @media (max-width: 500px) {
+      font-size:rem(12);
+     
+    }
+  }
+  svg {
+    @media (max-width: 500px) {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      top: -17px;
+      left: 18px;
+    }
+  }
+  span{
+    color: #707070;
+    @extend %font-medium;  
+    display: block;
+  }
+
+  .slide-span{
+    margin-left:em($spacing-xxl,17);
+    @media (max-width: 500px) {
+      font-size: rem(14);
+      margin-left:em($spacing-xxs,14);
+      margin-top:em($spacing-xs,14)
+    }
+  }
+  .bottomCommi {
+    line-height: 0;
+  }
+  .price-range {
+    display: flex;
+    width: 100%;
+    max-width: 1153px;
+    justify-content: space-between;
+    margin-top: em($spacing-xl,16);
+    align-items: center;
+    @media (max-width: 576px) {
+      padding: 0 15px;
+      margin-bottom: 1rem;
+    }
+    span {
+      font-size: rem(25);
+      color: $warm-grey;
+     min-width: 112px;
+     text-align: center;
+   
+    
+      @media (max-width: 768px) {
+        font-size:rem(20);
+       
+      }
+      @media (max-width: 500px) {
+        font-size: rem(14);
+      }
+      &:nth-child(2) {
+        font-size: rem(37);
+        @media (max-width: 768px) {
+          font-size:rem(30);
+        }
+        @media (max-width: 500px) {
+          font-size: rem(16);
+        }
+      }
+    }  
+  }
+  .selling-price {
+    font-size: rem(18);
+    display: flex;
+    align-items:center;
+    margin-top:em($spacing-xl,18);
+    margin-left:em($spacing-m,18);
+    span{
+      margin-left:rem($spacing-xxs-1);
+    }
+    @media (max-width: 500px) {
+     margin-left:0;
+    }
+
+    span {
+      font-size:rem(18);
+      @media (max-width: 500px) {
+        font-size: rem(15);
+        color: $turquoise-blue;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    @media (max-width: 500px) {
+      font-size: rem(15);
+      color: $turquoise-blue;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      background-color: #c3edf3;
+      border-radius: 50%;
+      left: 14px;
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.slider-wrapper{
+  margin-top: em($spacing-xxl-2,18);
+  @media (max-width: 575px) {
+    margin-top: em($spacing-l,18);
+    width: 100vw;
+  }
+}
+

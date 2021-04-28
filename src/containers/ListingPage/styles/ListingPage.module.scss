@@ -1,0 +1,110 @@
+@import "./../../../globalStyles/index";
+
+.listHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: rem($spacing-m);
+  @media(max-width: 1200px){
+      padding:0 15px;
+  }
+  @media(max-width: 550px){
+    margin-top: rem($spacing-xs);
+  }
+}
+.results {
+  width: 50%;
+  text-align: right;
+  float: right;
+  font-size: rem(18);
+  font-family: Regular;
+  color: $greyish-brown-two;
+  @media (max-width: 550px) {
+    width: 100%;
+    text-align: left;
+    float: left;
+    font-size: rem(13);
+    padding: 0.3em 0;
+  }
+}
+.btn-groups {
+  display: flex;
+  width: 50%;
+  .hidebtn {
+    font-family: SemiBoldFont;
+    width: 150px;
+  }
+  @media (max-width: 991px) {
+    width: 70%;
+  }
+  @media (max-width: 550px) {
+    display: none;
+  }
+  .selectbtn {
+    width: 20%;
+    min-width: 118px;
+    margin-left: 0.7rem;
+  }
+}
+
+.map {
+  .mapContainer{
+    margin-top: rem($spacing-xs);
+    width: 100%;
+    height:1212px;
+    @media(max-width: 500px){
+      height: 100vh;
+    }
+  }
+  width: 39%;
+  @media (max-width: 1060px) {
+    width: 50%;
+  }
+  @media (max-width: 991px) {
+    width:50%;
+  }
+  @media (max-width: 714px) {
+    width:100%;
+  }
+}
+
+.mapwrapper{
+  position: relative;
+}
+
+.housecard {
+  width: 51%;
+  overflow: hidden;
+  @media (max-width: 1360px) {
+    width: 54%;
+  }
+  @media (max-width: 1200px) {
+    width: 60%;
+  }
+  @media (max-width: 1060px) {
+    width: 50%;
+  }
+  @media (max-width: 991px) {
+    width: 50%;
+  }
+  @media (max-width: 714px) {
+    position: absolute;
+    width:100%;
+    height: 230px;
+    z-index: 999;
+    top:50vh;
+  }
+}
+.housecardmap {
+  width: 80%;
+  margin: auto;
+  @media(max-width: 1378px){
+    width: 87%;
+    margin: auto;
+  }
+  @media(max-width: 1278px){
+    width: 90%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,149 @@
+@import "../../../globalStyles/index.scss";
+
+.dd-wrapper {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+
+  .dd-header {
+    background-color: white;
+    color: $warm-grey;
+    @extend %font-medium;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    @media(max-width:700px){
+      font-size: rem(13);
+      text-align: left;
+display: flex;
+justify-content: flex-start;
+margin-left: 3rem;
+    }
+    .Icon{
+position: absolute;
+left: rem($spacing-xs);
+    }
+    .arrow{
+      position: absolute;
+      right:rem($spacing-l);
+      top:16px;
+    }
+    &:focus {
+      border: none;                        
+      outline: none;
+    }
+  }
+  .dd-list {
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    overflow: hidden;
+    width: 130%;
+    max-width: 302px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    left: 0px;
+    top: 50px;
+   
+    li {
+      color: $warm-grey;
+      font-size: rem(15);
+      font-family: Regular;
+      padding: 1rem 3rem 1rem 1.5rem;
+      border-bottom: 1px solid rgba(144, 143, 145, 0.5);
+     
+      background-color: white;
+      &:hover {
+        background-color: $white;
+      }
+      &:last-child {
+        
+        border: none;
+        text-align: left;
+      }
+    
+    }
+  }
+}
+
+
+
+
+.dd-wrapper-secondary {
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid $pinkish-grey;
+  .dd-header {
+    background-color: white;
+    color: $warm-grey;
+    height: 35px;
+    border-radius: 3px;  
+    @extend %font-small;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding:0 rem($spacing-xxs);
+   .arrow{
+    position: absolute;
+    right:rem($spacing-l);
+    top:16px;
+    right:14px;
+  }
+  }
+  &:focus {
+    border: 1px solid $pinkish-grey !important;
+
+  }
+  .dd-list {
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    left: 0px;
+    top: 43px;
+    overflow: hidden;
+    
+    li {
+      color: $warm-grey;
+      font-size: rem(15);
+      font-family: Regular;
+      padding: 1rem 3rem 1rem 1.5rem;
+      border-bottom: 1px solid rgba(144, 143, 145, 0.5);
+
+     
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+
+.input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  color: $warm-grey;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none
+}
