@@ -23,11 +23,11 @@ export const linkitems = [
     links: [
       {
         link: 'Buy',
-        path: '/buy',
+        path: 'detail',
       },
       {
         link: 'Rent',
-        path: '/rent',
+        path: 'detail',
       },
     ],
   },
@@ -36,11 +36,11 @@ export const linkitems = [
     links: [
       {
         link: 'Find an Agent',
-        path: '/Find-an-Agent',
+        path: 'listing',
       },
       {
         link: 'Find a Partner',
-        path: '/Find-a-Partner',
+        path: 'detail',
       },
     ],
   },
@@ -49,11 +49,11 @@ export const linkitems = [
     links: [
       {
         link: 'For Sale',
-        path: '/For-Sale',
+        path: 'listing',
       },
       {
         link: 'For Rent',
-        path: '/For-Rent',
+        path: 'listing',
       },
     ],
   },
@@ -62,11 +62,11 @@ export const linkitems = [
     links: [
       {
         link: 'Become a Partner',
-        path: '/Become-a-Partner',
+        path: 'send-an-offer',
       },
       {
         link: 'Become an Housse Agent',
-        path: '/Become-an-Housse-Agent',
+        path: 'sell-my-house',
       },
     ],
   },

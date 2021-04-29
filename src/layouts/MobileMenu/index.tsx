@@ -10,7 +10,9 @@ import { CSSTransitionGroup } from "react-transition-group"
 import Input from "@Components/Input"
 import Button from "@Components/Button"
 import { linkitems, dashboardItems } from "@data/common/data"
+import Link from "@Components/Link"
 import { IMobileMenu } from "./MobileMenu"
+
 // svg
 import Search from "./svg/search.svg"
 import Arrow from "./svg/down.svg"
@@ -109,7 +111,7 @@ const MobileMenu: React.FunctionComponent<IMobileMenu.IProps> = ({ CloseMenu }) 
                   <ul className={`${styles["nested-list"]}`}>
                     {link.links.map((i, index) => (
                       <li key={index}>
-                        <a src={`/${i.path}`}>{i.link}</a>
+                        <Link href={i.path}>{i.link}</Link>
                       </li>
                     ))}
                   </ul>
