@@ -38,18 +38,25 @@
     }
 }
 .customDrop{
-    display: block;
-    width: 100%;
-    padding: .25rem 1rem;
-    clear: both;
-    font-size: rem(16);
-    color:$warm-grey;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    text-align: center;
-    text-decoration: none;
+    a{
+        display: block;
+        width: 100%;
+        padding: .25rem 1rem;
+        clear: both;
+        font-size: rem(16);
+        color:$warm-grey;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color:$turquoise-blue;
+        }
+       
+    }
     &:hover{
         text-decoration: none;
         color:$turquoise-blue;

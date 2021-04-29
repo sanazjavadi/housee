@@ -101,12 +101,12 @@ export const headerLinks = [
     links: [
       {
         title: 'Buy',
-        path: '',
+        path: 'detail',
       },
 
       {
         title: 'Rent',
-        path: '',
+        path: 'detail',
       },
     ],
   },
@@ -115,11 +115,11 @@ export const headerLinks = [
     links: [
       {
         title: 'For Sale',
-        path: '',
+        path: 'listing',
       },
       {
         title: 'For Rent',
-        path: '',
+        path: 'listing',
       },
     ],
   },
@@ -128,11 +128,11 @@ export const headerLinks = [
     links: [
       {
         title: 'Rent',
-        path: '',
+        path: 'detail',
       },
       {
         title: 'Another action',
-        path: '',
+        path: 'listing',
       },
     ],
   },
@@ -141,11 +141,11 @@ export const headerLinks = [
     links: [
       {
         title: 'Become a Partner',
-        path: '',
+        path: 'send-an-offer',
       },
       {
-        title: ' Become an Houssee Agent',
-        path: '',
+        title: 'Become an Houssee Agent',
+        path: 'sell-my-house',
       },
     ],
   },

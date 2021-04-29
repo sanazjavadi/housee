@@ -7,7 +7,6 @@
  */
 import React, { useState } from "react"
 import { CSSTransitionGroup } from "react-transition-group"
-
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"
 
 import Particles from "react-particles-js"
